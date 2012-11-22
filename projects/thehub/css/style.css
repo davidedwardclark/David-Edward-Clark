@@ -1,0 +1,615 @@
+/*
+
+CSS: David Clark
+Site: The Hub - Staff Intranet for Victorian Epicure Inc.
+
+COLORS
+#FFFFFF = rgba(255,255,255,0)
+#CCCCCC = rgba(,,,)
+#333333 = rgba(51,51,51,0)
+#000000 = rgba(0,0,0,0)
+
+*/
+
+
+/* Reset
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+img,
+object,
+embed {max-width: 100%;}
+html {overflow-y: scroll;}
+ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none; color: #000;}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+input, select {vertical-align: middle;}
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: pre-line;
+	word-wrap: break-word;
+}
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+select, input, textarea {font: 99% sans-serif;}
+table {font-size: inherit; font: 100%;}
+a:hover, a:active {outline: none;}
+small {font-size: 85%;}
+strong, th {font-weight: bold;}
+td, td img {vertical-align: top;} 
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+button, input, select, textarea {margin: 0;}
+button {width: auto; overflow: visible;}
+.ie7 img {-ms-interpolation-mode: bicubic;}
+.group:before, .group:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.group:after { clear: both; }  
+.group { zoom: 1; }
+.hide { display: none; }
+
+
+/* Main
+-------------------------------------------------------------------------------*/
+
+/* Containers */
+body {
+	background: #333333 url('../img/bg-noise.png') repeat 0 0;
+	font: 16px/20px sans-serif;
+}
+#container {
+	width: 1140px;
+	padding: 0;
+	margin: 0 auto;
+	background: transparent url('../img/bg-lightsrc.png') no-repeat center -50px;
+}
+
+/* Typekit */
+.wf-loading h2 {
+    visibility: hidden;
+}
+
+
+/* Typography */
+h2 {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 20px;
+	line-height: 28px;
+	color: #333333;
+	text-shadow: #FFFFFF 0 1px 1px;
+}
+.wf-active h2 {
+	font-family: "myriad-pro-condensed", helvetica, arial, sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 3px;
+}
+p, li, .regular, textarea, input {
+	font-family: helvetica, arial, sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+.wf-active p, .wf-active li, .wf-active .regular, .wf-active textarea, .wf-active input {
+	font-family: "myriad-pro", helvetica, arial, sans-serif;
+	font-size: 15px;
+}
+.small {
+	font-size: 11px;
+}
+.wf-active .small {
+	font-size: 12px;
+}
+.textured p, .feedback input {
+	text-shadow: #FFFFFF 0 1px 1px;
+}
+.wow h2 {
+	font-family: georgia, serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 48px;
+	line-height: 60px;
+}
+.wf-active .wow h2 {
+	font-family: "coquette", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 56px;
+	line-height: 60px;
+}
+
+/* Links */	
+a:link, a:visited, a:active, a:hover {
+	color: #669900;
+	text-decoration: underline;
+}
+
+/* Grid */
+.unit {
+	margin-bottom: 20px;
+}
+.box {
+	padding: 10px;
+}
+.col1 {
+	float: left;
+	margin: 0 20px;
+	width: 184px;
+}  
+.col2 {
+	float: left;
+	margin: 0 20px;
+	width: 408px;
+}   
+.col1-col2-left, .col1-col2-right {
+	float: left;
+	width: 174px;
+}
+.col1-col2-left {
+	margin-right: 20px;
+}
+
+/* Rounded Corners & Drop Shadows */
+.box_round, .box_round ol li a {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px 10px 10px 10px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.box_glow {
+	-moz-box-shadow: 0px 0px 12px #000000;
+	-webkit-box-shadow: 0px 0px 12px #000000;
+	box-shadow: 0px 0px 12px #000000;
+}
+.box_gradient, .box_gradient_nav ol li a {
+	background-color: #EEEEEE;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CCCCCC));
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #CCCCCC);
+	background-image: -moz-linear-gradient(top, #FFFFFF, #CCCCCC);
+	background-image: -ms-linear-gradient(top, #FFFFFF, #CCCCCC);
+	background-image: -o-linear-gradient(top, #FFFFFF, #CCCCCC);
+	background-image: linear-gradient(top, #FFFFFF, #CCCCCC);
+}
+.no-cssgradients .box_gradient, .no-cssgradients .box_gradient_nav ol li a {
+	background: #eee url('/img/bg-gradient.png') repeat-x 0 0;
+}
+.box_shadow, .box_shadow_nav ol li a {
+	-moz-box-shadow: 0px 1px 3px #000000;
+	-webkit-box-shadow: 0px 1px 3px #000000;
+	box-shadow: 0px 1px 3px #000000;
+	background-color: #FFFFFF;
+}
+
+/* Textures */
+.textured {
+	background: #eee url('../img/bg-textured.png') repeat 0 0;
+}
+
+/* Header */
+header {
+	position: relative;
+}
+header #logo {
+	position: absolute;
+	left: 40px;
+	top: 36px;
+}
+.ie8 header #logo {
+	position: relative;
+	left: -390px;
+}
+header nav.main {
+	float: left;
+	margin: 80px 0 0 321px;
+}
+header nav.main ol li {
+	list-style-type: none;
+	float: left;
+	margin-right: 21px;
+}
+header nav.main ol li.active {
+	height: 69px;
+	background: transparent url('../img/notch.png') no-repeat bottom center;
+}
+header nav.main ol li a {
+	font-family: "myriad-pro", helvetica, arial, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	display: block;
+	width: 102px;
+	padding: 5px 0 8px 0;
+	text-decoration: none;
+	color: #202020;
+	text-align: center;
+	text-shadow: #FFFFFF 0 1px 1px;
+}
+header nav.secondary {
+	position: absolute;
+	top: 10px;
+	right: 40px;
+}
+header nav.secondary ol li {
+	float: left;
+	margin-right: 15px;
+	list-style-type: none;
+}
+header nav.secondary ol li a {
+	font-family: "myriad-pro", helvetica, arial, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	display: block;
+	padding: 3px 0 5px 0;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-shadow: #000000 0 1px 1px;
+}
+header nav.secondary ol li a.nav-calendar {
+	padding-left: 26px;
+	background: transparent url('../img/icons/calendar.png') no-repeat 0px 1px;
+}
+header nav.secondary ol li a.nav-directory {
+	padding-left: 33px;
+	background: transparent url('../img/icons/directory.png') no-repeat 0px 3px;
+}
+header nav.secondary ol li a.nav-docs {
+	padding-left: 23px;
+	background: transparent url('../img/icons/docs.png') no-repeat 0px 3px;
+}
+
+/* Content */
+#content {
+	width: 1120px;
+	margin: 0 auto 15px auto;
+	padding: 20px 0 0 0;
+	background-color: #FFFFFF;
+	/* background: #FFFFFF url('../img/grid.png') repeat-y 0 20px; */
+}
+
+/* Homepage */
+
+/* all */
+.box_icon {
+	float: left;
+	margin-right: 10px;
+}
+.tall {
+	margin-bottom: 50px;
+}
+
+/* welcome */
+.welcome {
+	padding-right: 180px;
+	position: relative;
+}
+.welcome img {
+	position: absolute;
+	bottom: 0;
+	right: -8px;
+}
+.welcome h2 {
+	margin: 0 0 0 -5px;
+}
+.welcome .intro {
+	margin-bottom: 5px;
+}
+.welcome .sylvie, .welcome .everyday {
+	padding: 2px 0;
+}
+.welcome .sylvie {
+	margin-right: 10px;
+	padding-left: 20px;
+	background: transparent url('../img/homepage/sylvie.ico') no-repeat 0px 0px;
+}
+.welcome .everyday {
+	padding-left: 20px;
+	background: transparent url('../img/homepage/everyday.ico') no-repeat 0px 0px;
+}
+
+/* feedback */
+.feedback .regular {
+	margin-left: 2px;
+}
+.feedback form textarea {
+	border: none;
+	width: 368px;
+	max-width: 368px;
+	height: 90px;
+	padding: 10px;
+	margin-bottom: 5px;
+	box-shadow: inset 0 1px 8px 1px #999999;
+	overflow: auto;
+	outline: none;
+}
+.feedback form input {
+	display: block;
+	border: none;
+	padding: 1px 30px;
+	font-weight: bold;
+	float: right;
+}
+
+/* news */
+.news ul li {
+	margin: 10px 0;
+}
+.news ul li img {
+	float: left;
+	margin: 3px 10px 0 0;
+	border: 2px solid #333;
+	border-radius: 2px;
+}
+.news ul li h3, .news ul li p {
+	margin-left: 88px;
+}
+.older a {
+	color: #333;
+	text-decoration: none;
+}
+.older a p {
+	font-weight: bold;
+}
+
+/* phone numbers */
+.phonenumbers ul li {
+	margin: 10px 0;
+	/*
+	padding-left: 26px;
+	background: transparent url('../img/icons/phone.png') no-repeat 0 4px;
+	*/
+}
+.phonenumbers ul li strong {
+	display: block;
+}
+
+/* addresses */
+.addresses ul li {
+	margin: 10px 0;
+}
+
+/* popular forms */
+.popularforms ul li {
+	margin: 10px 0;
+	/* 
+	padding-left: 43px;
+	background: transparent url('../img/icons/doc.png') no-repeat 0 2px;
+	*/
+}
+
+/* Department Main Pages */
+#department-masthead {
+	margin: 0 20px 20px 20px;
+}
+.department-intro {
+}
+
+/* Footer */
+
+
+
+/* Print
+-------------------------------------------------------------------------------*/
+@media print {
+}
+
+
+/* Media Queries
+-------------------------------------------------------------------------------*/
+
+/* Small Desktops & Tablet Landscape */
+@media only screen 
+and (max-width : 1140px) {
+	#container {
+		width: 915px;
+	}
+	#content {
+		width: 896px;
+	}
+	header nav.main {
+		margin-left: 175px;
+	}
+	.extras {
+		clear: both;
+		width: 896px;
+	}
+	.extras div {
+		float: left;
+		width: 184px;
+		margin-right: 40px;
+	}
+}
+
+/* Smartphone Landscape & Tablet Portrait */
+@media only screen 
+and (max-width : 915px) {
+	#container {
+		width: 468px;
+		background: none;
+	}
+	#content {
+		width: 447px;
+	}
+	header #logo {
+		left: 30px;
+		top: 15px;
+	}
+	header nav.main {
+		margin-top: 60px;
+		margin-left: 150px;
+		margin-bottom: 0;
+	}
+	header nav.main ol li {
+		margin-right: 11px;
+		margin-bottom: 10px;
+		height: 40px;
+	}
+	header nav.main ol li.active {
+		background: none;
+		height: 40px;
+	}
+	header nav.secondary {
+		right: 90px;
+	}
+	.extras {
+		width: 447px;
+	}
+	.extras div {
+		margin-right: 20px;
+	}
+	.extras .popularforms {
+		clear: both;
+	}
+}
+
+/* Smartphone Portrait */
+@media only screen 
+and (max-width : 468px) {
+	#container {
+		width: 320px;
+		background: none;
+	}
+	#content {
+		width: 299px;
+		background: #FFFFFF;
+	}
+	header #logo {
+		left: 49px;
+		top: 10px;
+	}
+	header nav.main {
+		margin-left: 40px;
+		margin-top: 110px;
+	}
+	header nav.main ol li {
+		margin-right: 11px;
+		margin-bottom: 10px;
+		height: 40px;
+	}
+	header nav.main ol li.active {
+		background: none;
+		height: 40px;
+	}
+	header nav.secondary {
+		left: 165px;
+	}
+	
+	/* Grid */
+	.col1 {
+		float: left;
+		margin: 0 20px;
+		width: 184px;
+	}
+	.col2 {
+		float: left;
+		margin: 0 20px;
+		width: 259px;
+	}
+	
+	/* Homepage */
+	
+	/* all */
+	.box_icon {
+		display: none;
+	}
+	.tall {
+		margin-bottom: 0;
+	}
+	
+	/* welcome */
+	.welcome {
+		padding-right: 10px;
+	}
+	.welcome img {
+		display: none;
+	}
+	.welcome h2 {
+		margin: 0;
+		padding: 0;
+	}
+	.welcome .intro {
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.welcome .blog-links {
+		margin-left: 15px;
+	}
+	.welcome .sylvie, .welcome .everyday {
+		font-size: 12px;
+		padding: 2px 0;
+	}
+	.welcome .sylvie {
+		margin-right: 10px;
+		padding-left: 20px;
+		background: transparent url('../img/homepage/sylvie.ico') no-repeat 0px 0px;
+	}
+	.welcome .everyday {
+		padding-left: 20px;
+		background: transparent url('../img/homepage/everyday.ico') no-repeat 0px 0px;
+	}
+	.calendar, .directory {
+		width: 239px;
+	}
+	.calendar {
+		margin-bottom: 20px;
+	}
+	
+	/* feedback */
+	.feedback .regular {
+		display: none;
+	}
+	.feedback form textarea {
+		border: none;
+		width: 219px;
+		max-width: 219px;
+		height: 90px;
+		padding: 10px;
+		margin-bottom: 5px;
+		box-shadow: inset 0 1px 8px 1px #999999;
+		overflow: auto;
+	}
+	.feedback form input {
+		display: block;
+		border: none;
+		padding: 1px 30px;
+		font-weight: bold;
+		float: right;
+	}
+	.news ul li img {
+		display: none;
+	}
+	.news ul li h3, .news ul li p {
+		margin-left: 0;
+	}
+}
+
