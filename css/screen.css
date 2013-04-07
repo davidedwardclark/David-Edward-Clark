@@ -13,8 +13,6 @@ mid: 30/40
 large: 40/60
 
 -Colors-
-green: #3fb417 rgba(63, 180, 23, 1)
-pink: #aa006c rgba(170, 0, 108, 1)
 blue: #006bfd rgba(0, 107, 253, 1)
 light grey: #cccccc rgba(204,204,204,1)
 medium grey: #999999 rgba(153,153,153,1)
@@ -134,7 +132,8 @@ h1, h2, h3 {
 }
 #header img {
     float: left;
-    width: 16.7rem;
+    width: 20rem;
+    margin-top: 3px;
 }
 #header section nav {
     float: right;
@@ -146,9 +145,11 @@ h1, h2, h3 {
 }
 #header section nav ul li.active {
     background: url('/img/arrow.png') no-repeat bottom center;
+    font-weight: bold;
 }
 #header section nav ul li a, #header section nav ul li a:visited {
-    color: #222222;
+    color: #999999;
+    font-weight: bold;
 }
 #main {
     width: 120rem;
@@ -342,6 +343,9 @@ h1, h2, h3 {
 .projects .straight:last-child {
     margin-bottom: 0;
 }
+.projects .no-top-padding {
+    padding-top: 0;
+}
 
 /* Section: Library */
 .library h2 {
@@ -523,18 +527,21 @@ h1, h2, h3 {
         width: 36rem;
     }
     .projects p {
-        margin-bottom: 4rem;
+        margin-bottom: 3.5rem;
     }
     .projects .button {
         float: right;
         margin: -1rem 0 0 0;
     }
+    .projects section {
+        width: 69.6rem;
+    }
     .projects .framed {
         padding: 3.5rem;
         border-radius: 12px;
     }
-    .projects section {
-        width: 69.6rem;
+    .projects .no-top-padding {
+        padding-top: 0;
     }
     
     /* Section: Library */
@@ -602,7 +609,7 @@ h1, h2, h3 {
         min-width: 48rem;
     }
     #header section {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     #header section, #main {
         width: 43rem;
@@ -612,7 +619,7 @@ h1, h2, h3 {
     #header img {
         display: block;
         float: none;
-        width: 21rem;
+        width: 26rem;
         margin: 0 auto 2rem auto;
     }
     #header section nav {
@@ -623,7 +630,7 @@ h1, h2, h3 {
     }
     #header section nav ul li {
         float: left;
-        margin-right: 3rem;
+        margin-right: 2.75rem;
     }
     #header section nav ul li:last-child {
         margin-right: 0;
@@ -655,6 +662,9 @@ h1, h2, h3 {
     .projects aside, .projects h2, .projects p {
         float: none;
     }
+    .projects h2 {
+        line-height: 3.5rem;
+    }
     .projects .nodemo p {
         margin-bottom: 0;
     }
@@ -663,11 +673,11 @@ h1, h2, h3 {
         margin: 0;
     }
     .projects article {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .projects section {
         width: 43rem;
-        margin-top: 5.5rem;
+        margin-top: 4.5rem;
     }
     .projects .nodemo section {
         margin-top: 3rem;
@@ -675,6 +685,12 @@ h1, h2, h3 {
     .projects .framed {
         padding: 2rem;
         border-radius: 10px;
+    }
+    .projects .no-top-padding {
+        padding-top: 0;
+    }
+    .projects .framed, .projects .straight {
+        margin-bottom: 3rem;
     }
     
     /* Section: Library */
@@ -782,13 +798,13 @@ h1, h2, h3 {
         padding-right: 0;
     }
     #header img {
-        width: 18rem;
+        width: 27rem;
     }
     #header section nav {
         width: 32rem;
     }
     #header section nav ul li {
-        margin-right: 2.63rem;
+        margin-right: 2.55rem;
     }
     
     /* Section: Home */
@@ -834,7 +850,7 @@ h1, h2, h3 {
     }
     .projects section {
         width: 32rem;
-        margin-top: 5rem;
+        margin-top: 4.5rem;
     }
     
     /* Section: About */
