@@ -300,7 +300,7 @@ h1, h2, h3 {
     font-size: 3rem;
     font-weight: bold;
     line-height: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 .projects p {
     margin-bottom: 4rem;
@@ -748,6 +748,8 @@ h1, h2, h3 {
         clear: both;
         text-align: center;
         width: 43rem;
+        padding: 3rem 0;
+        line-height: 4rem;
     }
     .about .bio, .about p {
         text-align: center;
