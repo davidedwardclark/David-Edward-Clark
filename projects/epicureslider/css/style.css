@@ -140,13 +140,13 @@ html { min-width: 900px; }
 #full-slider { position: relative; width: 900px; height: 850px; margin: 0 auto; }
 #full-slider .slide-panel { position: absolute; top: 0; left: 0; visibility: hidden; }
 #full-slider .slide-panel.active { visibility: visible; }
-#full-slider-nav { float: right; margin-top: 10px;}
+#full-slider-nav { float: right; margin-top: 10px; }
 #full-slider-nav-left, #full-slider-nav-right { display: block; float: left; margin-left: 10px; width: 40px; height: 40px; cursor: pointer; }
 #full-slider-nav-left a, #full-slider-nav-right a { display: block; width: 40px; height: 40px; cursor: pointer; }
-#full-slider-nav-left { background: transparent url(../img/left.png) no-repeat 0 0; }
-#full-slider-nav-left a:hover { background: transparent url(../img/left-hover.png) no-repeat 0 0; }
-#full-slider-nav-right { background: transparent url(../img/right.png) no-repeat 0 0; }
-#full-slider-nav-right a:hover { background: transparent url(../img/right-hover.png) no-repeat 0 0; }
+#full-slider-nav-left { background: transparent url(../img/left.png) no-repeat 0 0;  background-size: contain; }
+#full-slider-nav-left a:hover { background: transparent url(../img/left-hover.png) no-repeat 0 0; background-size: contain; width: 40px; height: 40px; }
+#full-slider-nav-right { background: transparent url(../img/right.png) no-repeat 0 0; background-size: contain; }
+#full-slider-nav-right a:hover { background: transparent url(../img/right-hover.png) no-repeat 0 0; background-size: contain; width: 40px; height: 40px; }
 
 
 
@@ -295,9 +295,10 @@ h2 {
 	margin-bottom: 17px;
 }
 #saffron .recipes {
-	border: 1px solid #eee;
-	padding: 16px 20px 0 20px;
 	width: 298px;
+	padding: 16px 20px 0 20px;
+	border: 1px solid #eee;
+	border-radius: 12px;
 }
 
 /* Process */

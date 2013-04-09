@@ -322,7 +322,7 @@ h1, h2, h3 {
 }
 .projects .framed {
     box-sizing: border-box;
-    padding: 5rem;
+    padding: 4rem;
     box-shadow: 0px 0px 4px 0px #eeeeee;
     border-radius: 14px;
     border: 1px solid #eeeeee;
@@ -683,7 +683,7 @@ h1, h2, h3 {
         margin-top: 3rem;
     }
     .projects .framed {
-        padding: 2rem;
+        padding: 1.75rem;
         border-radius: 10px;
     }
     .projects .no-top-padding {
