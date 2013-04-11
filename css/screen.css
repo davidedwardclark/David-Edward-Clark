@@ -164,12 +164,6 @@ h1, h2, h3 {
     width: 69.6rem;
     margin-right: 6rem;
 }
-.home #articles a {
-    color: #222222;
-}
-.home #articles a:hover {
-    color: #666666;
-}
 .home .date {
     float: left;
 }
