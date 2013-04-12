@@ -163,17 +163,21 @@ h1, h2, h3 {
     float: left;
     width: 69.6rem;
     margin-right: 6rem;
+    margin-left: 25.2rem;
+}
+.home .meta {
+    float: left;
+    margin-left: -25.2rem;
+    width: 19.2rem;
 }
 .home .date {
-    float: left;
+    text-align: right;
 }
-.home .tags {
-    float: right;
-}
-.home #articles .meta aside, .home #articles .meta a {
+.home #articles .meta aside {
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: #999999;
+    margin-top: 0.4rem;
 }
 .home #articles h2 {
     margin-bottom: 3rem;
@@ -183,44 +187,38 @@ h1, h2, h3 {
     margin-bottom: 3rem;
     text-align: justify;
 }
-.home #articles-info, .home #about-summary {
+.home #about-summary {
     float: left;
     width: 19.2rem;
 }
-.home #articles-info {
-     margin-right: 6rem;
-}
-.home #articles-info h2, .home #about-summary h2, .home #articles-info ul li, .home #about-summary ul li, .home #articles-info p, .home #about-summary p {
+.home #about-summary h2, .home #about-summary ul li, .home #about-summary p {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 300;
 }
-.home #articles-info h2, .home #about-summary h2 {
+.home #about-summary h2 {
     color: #444444;
     font-weight: bold;
 }
-.home #articles-info ul, .home #about-summary ul, .home #articles-info p, .home #about-summary p {
+.home #about-summary ul, .home #about-summary p {
     margin-bottom: 2.4rem;
 }
-.home #articles-info ul li, .home #about-summary ul li, .home #articles-info p, .home #about-summary p {
+.home #about-summary ul li, .home #about-summary p {
     color: #999999;
 }
 
 /* Section: Article */
-.article .date, .article .tags, .article .tags a, .article aside {
+.article .date, .article aside {
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: #999999;
 }
-.article .date, .article .tags {
+.article .date {
     width: 19.2rem;
 }
 .article .date {
     float: left;
     text-align: right;
-}
-.article .tags {
-    float: right;
 }
 .article h1, .article h2, .article p, .article ul, .article ol, .article .small, .article .large figcaption {
     width: 69.6rem;
@@ -479,19 +477,27 @@ h1, h2, h3 {
     /* Section: Home */
     .home #articles {
         margin-right: 0;
+        margin-left: 0;
+    }
+    .home .meta {
+        float: none;
+        margin-left: 0;
+    }
+    .home #articles .meta aside {
+        margin-top: 0;
+    }
+    .home .date {
+        text-align: left;
     }
     
     /* Section: Article */
-    .article .date, .article .tags {
+    .article .date {
         width: auto;
         text-align: left;
         margin: 0;
     }
     .article .date {
         float: left;
-    }
-    .article .tags {
-        float: right;
     }
     .article h1 {
         clear: both;
@@ -639,9 +645,6 @@ h1, h2, h3 {
     /* Home */
     .home #articles {
         width: 43rem;
-    }
-    .home #articles-info {
-        margin-right: 3rem;
     }
     .home #articles p {
         text-align: left;
@@ -816,7 +819,7 @@ h1, h2, h3 {
     .home #articles {
         width: 32rem;
     }
-    .home .tags, .home .date {
+    .home .date {
         float: none;
     }
     
@@ -827,7 +830,7 @@ h1, h2, h3 {
     .article ul, .article ol {
         width: 30rem;
     }
-    .article .date, .article .tags {
+    .article .date {
         float: none;
     }
     .article p + p, .article p + aside + p {
