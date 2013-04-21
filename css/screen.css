@@ -84,9 +84,6 @@ td { vertical-align: top; }
    ========================================================================== */
 
 img, object { max-width: 100%; }
-.blur {
-    image-rendering: -webkit-optimize-contrast;
-}
 
 
 /* =============================================================================
@@ -402,12 +399,13 @@ h1, h2, h3 {
     font-size: 3rem;
     font-weight: normal;
     line-height: 4.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .about .bio {
     float: left;
     width: 36rem;
-    margin-right: 6rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
 }
 .about .bio p {
     margin-bottom: 3rem;
@@ -421,12 +419,21 @@ h1, h2, h3 {
 .about .block {
     display: block;
     float: left;
-    margin-bottom: 3rem;
+    width: 35rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.no-touch .about .block:hover {
+    background-color: #006bfd;
+    border-radius: 1rem;
 }
 .about .block section {
     display: block;
     float: left;
     color: #222222;
+}
+.no-touch .about .block:hover section {
+    color: #ffffff;
 }
 .about .twitter img {
     width: 5.8rem;
@@ -586,7 +593,8 @@ h1, h2, h3 {
     }
     .about .bio {
         clear: both;
-        margin-right: 4rem;
+        margin-right: 2rem;
+        margin-top: 0;
     }
     .about .bio p {
         margin-bottom: 3rem;
@@ -595,6 +603,12 @@ h1, h2, h3 {
         width: 3.9rem;
         height: 2.8rem;
         margin-right: 2rem;
+    }
+    .about .block {
+        width: 29.6rem;
+    }
+    .about .twitter {
+        margin-top: -1rem;
     }
     .about .block p {
         font-size: 1.6rem;
@@ -767,6 +781,8 @@ h1, h2, h3 {
     }
     .about .block {
         width: 43rem;
+        padding-left: 0;
+        padding-right: 0;
     }
     .about .icon {
         width: 43rem;
@@ -774,8 +790,7 @@ h1, h2, h3 {
         text-align: center;
     }
     .about .icon img {
-        margin: 0 auto 1rem 0;
-        display: inline;
+        margin: 0 auto 1rem auto;
     }
     .about .block section h2, .about .block section p {
         clear: both;
