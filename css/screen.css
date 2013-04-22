@@ -840,6 +840,9 @@ h1, h2, h3 {
     }
 
     /* Section: Library */
+    .library h2 {
+        margin-bottom: 1rem;
+    }
     .library ul li {
         margin-bottom: 2rem;
         margin-right: 0;
