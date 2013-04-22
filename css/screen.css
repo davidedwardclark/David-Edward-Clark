@@ -321,9 +321,8 @@ h1, h2, h3 {
 .projects .framed {
     box-sizing: border-box;
     padding: 4rem;
-    box-shadow: 0px 0px 4px 0px #eeeeee;
     border-radius: 20px;
-    border: 1px solid #eeeeee;
+    border: 1px solid #dddddd;
     background-color: #ffffff;
 }
 .projects .straight {
@@ -347,10 +346,10 @@ h1, h2, h3 {
 
 /* Section: Library */
 .library h2 {
-    font-size: 4rem;
-    line-height: 6rem;
+    font-size: 3rem;
+    line-height: 4rem;
     font-weight: bold;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     clear: both;
 }
 .library h3, .library p {
@@ -362,31 +361,38 @@ h1, h2, h3 {
 }
 .library ul li {
     float: left;
-    width: 25.5rem;
-    margin: 0 6rem 4rem 0;
+    width: 19.2rem;
+    margin: 0 6rem 6rem 0;
 }
-.library ul li:nth-child(4n) {
+.library ul li:nth-child(5n) {
     margin-right: 0;
 }
 .library section {
     position: relative;
-    margin-bottom: 0.75rem;
 }
-.library section img {
+.library ul li section:nth-child(1) {
+    height: 23rem;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 0.7rem;
+}
+.library ul li section:nth-child(1) img {
+    width: 80%;
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
 }
-.library .description {
+.library ul li section:nth-child(1) img.shorten {
+    width: 70%;
+}
+.library ul li section:nth-child(1) img.extra-shorten {
+    width: 65%;
+}
+.library ul li section:nth-child(1) img.fatten {
+    width: 90%;
+}
+.library ul li section:nth-child(2) {
     height: 14rem;
     overflow: hidden;
 }
-.library .books .row1-4 { height: 32.9rem; }
-.library .books .row2-4 { height: 44.5rem; }
-.library .books .row3-4 { height: 39.1rem; }
-.library .books .row4-4 { height: 38.1rem; }
-.library .periodicals .row1-4 { height: 35.9rem; }
-.library .documentaries .row1-4 { height: 37.8rem; }
-.library .documentaries .row2-4 { height: 36rem; }
 
 /* Section: About */
 .about .photo {
@@ -559,26 +565,14 @@ h1, h2, h3 {
     .projects .no-top-padding {
         padding-top: 0;
     }
-    
+
     /* Section: Library */
-    .library .books .row1-4 { height: auto; }
-    .library .books .row2-4 { height: auto; }
-    .library .books .row3-4 { height: auto; }
-    .library .books .row4-4 { height: auto; }
-    .library .documentaries .row1-4 { height: auto; }
-    .library .documentaries .row2-4 { height: auto; }
-    .library .books .row1-2 { height: 31.7rem; }
-    .library .books .row2-2 { height: 32.9rem; }
-    .library .books .row3-2 { height: 44.5rem; }
-    .library .books .row4-2 { height: 36rem; }
-    .library .books .row5-2 { height: 39.1rem; }
-    .library .books .row6-2 { height: 25.8rem; }
-    .library .books .row7-2 { height: 38rem; }
-    .library .books .row8-2 { height: 38.1rem; }
-    .library .documentaries .row1-2 { height: 37.8rem; }
-    .library .documentaries .row2-2 { height: 37.7rem; }
-    .library .documentaries .row3-2 { height: 36rem; }
-    .library .documentaries .row4-2 { height: 34.6rem; }
+    .library ul li:nth-child(5n) {
+        margin-right: 6rem;
+    }
+    .library ul li:nth-child(3n) {
+        margin-right: 0;
+    }
     
     /* Section: About */
     .about .photo {
@@ -712,51 +706,17 @@ h1, h2, h3 {
     .projects .framed, .projects .straight {
         margin-bottom: 3rem;
     }
-    
+
     /* Section: Library */
-    .library h2 {
-        margin-bottom: 2rem;
-    }
     .library ul li {
-        margin-bottom: 1rem;
+        margin-bottom: 4.6rem;
     }
-    .library .books .row1-2 { height: auto; }
-    .library .books .row2-2 { height: auto; }
-    .library .books .row3-2 { height: auto; }
-    .library .books .row4-2 { height: auto; }
-    .library .books .row5-2 { height: auto; }
-    .library .books .row6-2 { height: auto; }
-    .library .books .row7-2 { height: auto; }
-    .library .books .row8-2 { height: auto; }
-    .library .documentaries .row1-2 { height: auto; }
-    .library .documentaries .row2-2 { height: auto; }
-    .library .documentaries .row3-2 { height: auto; }
-    .library .documentaries .row4-2 { height: auto; }
-    .library .books .row1-1 { height: 30.1rem; }
-    .library .books .row2-1 { height: 31.7rem; }
-    .library .books .row3-1 { height: 31.2rem; }
-    .library .books .row4-1 { height: 32.9rem; }
-    .library .books .row5-1 { height: 44.5rem; }
-    .library .books .row6-1 { height: 31.7rem; }
-    .library .books .row7-1 { height: 36rem; }
-    .library .books .row8-1 { height: 31.3rem; }
-    .library .books .row9-1 { height: 39.1rem; }
-    .library .books .row10-1 { height: 31.7rem; }
-    .library .books .row11-1 { height: 25.8rem; }
-    .library .books .row12-1 { height: 22.7rem; }
-    .library .books .row13-1 { height: 38rem; }
-    .library .books .row14-1 { height: 34rem; }
-    .library .books .row15-1 { height: 30.6rem; }
-    .library .books .row16-1 { height: 38.1rem; }
-    .library .periodicals .row1-1 { height: 35.9rem; }
-    .library .periodicals .row2-1 { height: 25.8rem; }
-    .library .documentaries .row1-1 { height: 37.6rem; }
-    .library .documentaries .row2-1 { height: 37.8rem; }
-    .library .documentaries .row3-1 { height: 37.7rem; }
-    .library .documentaries .row4-1 { height: 31.2rem; }
-    .library .documentaries .row5-1 { height: 36rem; }
-    .library .documentaries .row6-1 { height: 35.7rem; }
-    .library .documentaries .row7-1 { height: 34.6rem; }
+    .library ul li:nth-child(1n) {
+        margin-right: 4.6rem;
+    }
+    .library ul li:nth-child(2n) {
+        margin-right: 0;
+    }
     
     /* Section: About */
     .about .photo {
@@ -877,6 +837,12 @@ h1, h2, h3 {
     .projects section {
         width: 32rem;
         margin-top: 4.5rem;
+    }
+
+    /* Section: Library */
+    .library ul li {
+        margin-bottom: 2rem;
+        margin-right: 0;
     }
     
     /* Section: About */
