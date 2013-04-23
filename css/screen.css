@@ -785,11 +785,11 @@ h1, h2, h3 {
         padding-right: 0;
     }
     #header section {
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
     #header section img {
-        width: 31.65rem;
-        margin: 0 0 3rem 0;
+        width: 31.8rem;
+        margin: 0 0 2.5rem 0;
     }
     #header section nav {
         width: 32rem;
