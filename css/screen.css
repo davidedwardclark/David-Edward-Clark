@@ -53,7 +53,7 @@ a:hover, a:active { outline: none; text-decoration: none;  }
    Typography
    ========================================================================== */
 
-h1, h2, h3, p { margin: 0; padding: 0; }
+h1, h2, h3, p, blockquote { margin: 0; padding: 0; }
 p {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -349,9 +349,8 @@ h1, h2, h3 {
     font-size: 3rem;
     line-height: 4rem;
     font-weight: bold;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     clear: both;
-    border-bottom: 1px solid #dddddd;
 }
 .library h3, .library p {
     font-size: 1.6rem;
@@ -373,7 +372,7 @@ h1, h2, h3 {
 }
 .library ul li section:nth-child(1) {
     height: 23rem;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid #dddddd;
     margin-bottom: 0.7rem;
 }
 .library ul li section:nth-child(1) img {
@@ -394,6 +393,40 @@ h1, h2, h3 {
     height: 14rem;
     overflow: hidden;
 }
+.library .ideas li {
+    width: auto;
+    margin: 0 0 3rem 0;
+    border-bottom: 1px solid #dddddd;
+}
+.library .ideas li section {
+    float: left;
+
+}
+.library .ideas li section:nth-child(1) {
+    width: 36rem;
+    height: auto;
+    margin: 0 6rem 0 0;
+    border-bottom: none;
+}
+.library .ideas li section:nth-child(1) img {
+    width: 16rem;
+    height: 16rem;
+    position: static;
+    float: left;
+    margin-bottom: 3rem;
+}
+.library .ideas li section:nth-child(1) div {
+    clear: both;
+    margin-bottom: 3rem;
+}
+.library .ideas li section:nth-child(2) {
+    width: 78rem;
+    height: auto;
+    overflow: auto;
+}
+.library .ideas li section blockquote {
+    margin: 0 0 3rem 0;
+}
 
 /* Section: About */
 .about .photo {
@@ -401,12 +434,12 @@ h1, h2, h3 {
     width: 36rem;
     height: 36rem;
     margin-right: 6rem;
+    margin-top: -0.5rem;
 }
 .about h1 {
     font-size: 3rem;
-    font-weight: normal;
-    line-height: 4.5rem;
-    margin-bottom: 2rem;
+    line-height: 4rem;
+    margin-bottom: 2.5rem;
 }
 .about .bio {
     float: left;
@@ -574,12 +607,15 @@ h1, h2, h3 {
     .library ul li:nth-child(3n) {
         margin-right: 0;
     }
+    .library .ideas li section:nth-child(2) {
+        width: 69.6rem;
+    }
     
     /* Section: About */
     .about .photo {
         width: 25rem;
         height: 25rem;
-        margin: 0 4rem 3rem 0;
+        margin: 0 3rem 3rem 0;
     }
     .about h1 {
         padding: 3.5rem 0;
@@ -717,6 +753,12 @@ h1, h2, h3 {
     }
     .library ul li:nth-child(2n) {
         margin-right: 0;
+    }
+    .library .ideas li section:nth-child(1) {
+        margin-right: 0;
+    }
+    .library .ideas li section:nth-child(2) {
+        width: 43rem;
     }
     
     /* Section: About */
@@ -862,6 +904,9 @@ h1, h2, h3 {
     .library ul li section:nth-child(1) img {
         position: static;
         margin-bottom: 1rem;
+    }
+    .library .ideas li section:nth-child(2) {
+        width: 32rem;
     }
     
     /* Section: About */
