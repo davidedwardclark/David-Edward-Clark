@@ -403,26 +403,33 @@ h1, h2, h3 {
 
 }
 .library .ideas li section:nth-child(1) {
-    width: 36rem;
+    width: 19.2rem;
     height: auto;
     margin: 0 6rem 0 0;
     border-bottom: none;
 }
 .library .ideas li section:nth-child(1) img {
+    display: block;
     width: 16rem;
     height: 16rem;
     position: static;
-    float: left;
     margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .library .ideas li section:nth-child(1) div {
     clear: both;
     margin-bottom: 3rem;
+    text-align: center;
 }
 .library .ideas li section:nth-child(2) {
-    width: 78rem;
+    width: 44.4rem;
+    margin-right: 6rem;
     height: auto;
     overflow: auto;
+}
+.library .ideas li section:nth-child(3) {
+    width: 44.4rem;
 }
 .library .ideas li section blockquote {
     margin: 0 0 3rem 0;
@@ -607,8 +614,10 @@ h1, h2, h3 {
     .library ul li:nth-child(3n) {
         margin-right: 0;
     }
-    .library .ideas li section:nth-child(2) {
+    .library .ideas li section:nth-child(2),
+    .library .ideas li section:nth-child(3) {
         width: 69.6rem;
+        margin-right: 0;
     }
     
     /* Section: About */
@@ -757,7 +766,8 @@ h1, h2, h3 {
     .library .ideas li section:nth-child(1) {
         margin-right: 0;
     }
-    .library .ideas li section:nth-child(2) {
+    .library .ideas li section:nth-child(2),
+    .library .ideas li section:nth-child(3) {
         width: 43rem;
     }
     
@@ -905,7 +915,8 @@ h1, h2, h3 {
         position: static;
         margin-bottom: 1rem;
     }
-    .library .ideas li section:nth-child(2) {
+    .library .ideas li section:nth-child(2),
+    .library .ideas li section:nth-child(3) {
         width: 32rem;
     }
     
