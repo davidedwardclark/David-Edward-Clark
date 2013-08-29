@@ -354,7 +354,7 @@ h1, h2, h3 {
 }
 .library h3, .library p {
     font-size: 1.6rem;
-    line-height: 2.4rem;
+    line-height: 2.2rem;
 }
 .library h3 {
     font-weight: bold;
@@ -372,8 +372,6 @@ h1, h2, h3 {
 }
 .library ul li section:nth-child(1) {
     height: 23rem;
-    border-bottom: 1px solid #dddddd;
-    margin-bottom: 0.7rem;
 }
 .library ul li section:nth-child(1) img {
     width: 80%;
@@ -390,7 +388,7 @@ h1, h2, h3 {
     width: 90%;
 }
 .library ul li section:nth-child(2) {
-    height: 14rem;
+    height: 13rem;
     overflow: hidden;
 }
 .library .ideas li {
@@ -400,7 +398,6 @@ h1, h2, h3 {
 }
 .library .ideas li section {
     float: left;
-
 }
 .library .ideas li section:nth-child(1) {
     width: 19.2rem;
