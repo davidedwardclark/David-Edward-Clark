@@ -470,7 +470,7 @@ h1, h2, h3 {
     padding: 1rem;
     margin-bottom: 1rem;
 }
-.no-touch .about .block:hover {
+.about .block:hover {
     background-color: #006bfd;
     border-radius: 1rem;
 }
@@ -479,7 +479,7 @@ h1, h2, h3 {
     float: left;
     color: #222222;
 }
-.no-touch .about .block:hover section {
+.about .block:hover section {
     color: #ffffff;
 }
 .about .twitter img {
