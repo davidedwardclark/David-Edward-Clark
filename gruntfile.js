@@ -28,6 +28,26 @@ module.exports = function (grunt) {
             }
         },
 
+        // Cache Bust
+
+        // TODO: HTML files have there contents changed so we need to do this copies of them in the build folder
+        // as opposed to the original files.
+
+        hashres: {
+            options: {
+                encoding: 'utf8',
+                fileNameFormat: '${name}.${hash}.cache.${ext}',
+                renameFiles: true
+            },
+            css: {
+                options: {},
+                src: [
+                    'build/css/screen.css'
+                ],
+                dest: '*.html'
+            }
+        },
+
         // Image Optimization
         imagemin: {
             dynamic: {
@@ -281,11 +301,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-hashres');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-s3');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     // On run
-    grunt.registerTask('default', ['cssmin', 'concat', 'uglify', 'imagemin', 's3', 'clean']);
+    grunt.registerTask('default', ['cssmin', 'concat', 'uglify', 'hashres', 'imagemin', 's3', 'clean']);
 
 };
