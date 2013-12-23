@@ -9,6 +9,7 @@
     "grunt-contrib-cssmin": "~0.7.0",
     "grunt-s3": "~0.2.0-alpha.3",
     "grunt-contrib-clean": "~0.5.0",
-    "grunt-hashres": "~0.3.4"
+    "grunt-hashres": "~0.3.4",
+    "grunt-contrib-copy": "~0.4.1"
   }
 }

@@ -3,6 +3,18 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        // Copy HTML files into the build except for micro sites
+        copy: {
+            main: {
+                files: [
+                    {expand: true, src: ['*.html'], dest: 'build/'},
+                    {expand: true, src: ['about/*.html'], dest: 'build/'},
+                    {expand: true, src: ['library/*.html'], dest: 'build/'},
+                    {expand: true, src: ['projects/*.html'], dest: 'build/'},
+                ]
+            }
+        },
+
         // CSS Concatenate & Minify
         cssmin: {
             combine: {
@@ -28,26 +40,6 @@ module.exports = function (grunt) {
             }
         },
 
-        // Cache Bust
-
-        // TODO: HTML files have there contents changed so we need to do this copies of them in the build folder
-        // as opposed to the original files.
-
-        hashres: {
-            options: {
-                encoding: 'utf8',
-                fileNameFormat: '${name}.${hash}.cache.${ext}',
-                renameFiles: true
-            },
-            css: {
-                options: {},
-                src: [
-                    'build/css/screen.css'
-                ],
-                dest: '*.html'
-            }
-        },
-
         // Image Optimization
         imagemin: {
             dynamic: {
@@ -60,13 +52,36 @@ module.exports = function (grunt) {
             }
         },
 
+        // Cache Bust
+        hashres: {
+            options: {
+                encoding: 'utf8',
+                fileNameFormat: '${name}.${hash}.cache.${ext}',
+                renameFiles: true
+            },
+            css: {
+                options: {},
+                src: [
+                    'build/css/screen.css'
+                ],
+                dest: 'build/**/*.html'
+            },
+            images: {
+                options: {},
+                src: [
+                    'build/img/**/*.{png,jpg,gif}'
+                ],
+                dest: 'build/**/*.html'
+            }
+        },
+
         // Deploy to S3
         aws: grunt.file.readJSON(process.env.HOME+'/.grunt_aws'),
         s3: {
             options: {
                 key: '<%= aws.key %>',
                 secret: '<%= aws.secret %>',
-                bucket: 'test-bucket-123-123',
+                bucket: 'www.davidedwardclark.com',
                 access: 'public-read'
             },
             dev: {
@@ -93,11 +108,11 @@ module.exports = function (grunt) {
                             headers: {
                                 "Content-Encoding": "gzip",
                                 "Content-Type": "text/html",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
+                                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                                "Expires": "Fri, 01 Jan 1990 00:00:00 GMT"
                             }
                         },
-                        src: '*.html',
+                        src: 'build/*.html',
                         dest: ''
                     },
                     {
@@ -107,11 +122,11 @@ module.exports = function (grunt) {
                             headers: {
                                 "Content-Encoding": "gzip",
                                 "Content-Type": "text/html",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
+                                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                                "Expires": "Fri, 01 Jan 1990 00:00:00 GMT"
                             }
                         },
-                        src: 'about/*.html',
+                        src: 'build/about/*.html',
                         dest: 'about/'
                     },
                     {
@@ -121,11 +136,11 @@ module.exports = function (grunt) {
                             headers: {
                                 "Content-Encoding": "gzip",
                                 "Content-Type": "text/html",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
+                                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                                "Expires": "Fri, 01 Jan 1990 00:00:00 GMT"
                             }
                         },
-                        src: 'library/*.html',
+                        src: 'build/library/*.html',
                         dest: 'library/'
                     },
                     {
@@ -135,11 +150,11 @@ module.exports = function (grunt) {
                             headers: {
                                 "Content-Encoding": "gzip",
                                 "Content-Type": "text/html",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
+                                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                                "Expires": "Fri, 01 Jan 1990 00:00:00 GMT"
                             }
                         },
-                        src: 'projects/*.html',
+                        src: 'build/projects/*.html',
                         dest: 'projects/'
                     },
                     {
@@ -298,15 +313,16 @@ module.exports = function (grunt) {
     });
 
     // Plugins
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-hashres');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-hashres');
     grunt.loadNpmTasks('grunt-s3');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     // On run
-    grunt.registerTask('default', ['cssmin', 'concat', 'uglify', 'hashres', 'imagemin', 's3', 'clean']);
+    grunt.registerTask('default', ['copy', 'cssmin', 'concat', 'uglify', 'imagemin', 'hashres', 's3', 'clean']);
 
 };
