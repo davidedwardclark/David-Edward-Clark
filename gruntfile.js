@@ -59,17 +59,17 @@ module.exports = function (grunt) {
                 fileNameFormat: '${name}.${hash}.cache.${ext}',
                 renameFiles: true
             },
-            css: {
-                options: {},
-                src: [
-                    'build/css/screen.css'
-                ],
-                dest: 'build/**/*.html'
-            },
             images: {
                 options: {},
                 src: [
                     'build/img/**/*.{png,jpg,gif}'
+                ],
+                dest: ['build/**/*.html', 'build/css/screen.css']
+            },
+            css: {
+                options: {},
+                src: [
+                    'build/css/screen.css'
                 ],
                 dest: 'build/**/*.html'
             }
