@@ -379,7 +379,7 @@ h1, h2, h3 {
     bottom: 1rem;
 }
 .library ul li section:nth-child(1) img.shorten {
-    width: 70%;
+    width: 74%;
 }
 .library ul li section:nth-child(1) img.extra-shorten {
     width: 65%;
@@ -391,11 +391,11 @@ h1, h2, h3 {
     height: 13rem;
     overflow: hidden;
 }
-.library p.quote {
-    width: 60%;
+.library blockquote {
+    width: 69.6rem;
     font-size: 2rem;
     line-height: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 /* Section: About */
