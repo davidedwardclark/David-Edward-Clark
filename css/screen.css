@@ -582,7 +582,7 @@ h1, h2, h3 {
         width: 69.6rem;
         margin-right: 0;
     }
-    .library p.quote {
+    .library blockquote {
         width: 100%;
     }
     
