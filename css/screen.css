@@ -359,6 +359,9 @@ h1, h2, h3 {
 .library h3 {
     font-weight: bold;
 }
+.wf-inactive .library h3.tighten {
+    letter-spacing: -1px;
+}
 .library ul li {
     float: left;
     width: 19.2rem;
