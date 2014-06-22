@@ -396,9 +396,20 @@ h1, h2, h3 {
 }
 .library blockquote {
     width: 69.6rem;
+    margin-bottom: 2.5rem;
+}
+.library blockquote p {
     font-size: 2rem;
     line-height: 3rem;
-    margin-bottom: 2.5rem;
+}
+.library blockquote p.quote {
+    text-align: left;
+}
+.library blockquote p.quote .qm {
+    margin-left: -0.9rem;
+}
+.library blockquote p.author {
+    text-align: right;
 }
 
 /* Section: About */
