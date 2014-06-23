@@ -866,7 +866,7 @@ h1, h2, h3 {
     }
     
     /* Section: Article */
-    .article h1, .article h2, .article p, .article ul, .article ol, .article .small, .article .large figcaption {
+    .article h1, .article h2, .article p, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
         width: 32rem;
     }
     .article ul, .article ol {
