@@ -879,8 +879,11 @@ h1, h2, h3 {
         text-indent: 2rem;
     }
     .article ul, .article ol {
-        margin-left: 2rem;
+        margin-left: 3rem;
         margin-right: 0;
+    }
+    .article ol.footnotes {
+        padding-left: 2rem;
     }
     
     /* Section: Projects */
