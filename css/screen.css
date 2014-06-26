@@ -445,6 +445,7 @@ h1, h2, h3 {
     margin-top: -0.5rem;
 }
 .about h1 {
+    font-weight: bold;
     font-size: 3rem;
     line-height: 4rem;
     margin-bottom: 2.5rem;
