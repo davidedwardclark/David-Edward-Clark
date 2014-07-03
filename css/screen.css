@@ -234,7 +234,6 @@ h1, h2, h3 {
 }
 .article p {
     text-indent: 0;
-    text-align: justify;
 }
 .article p:last-child {
     margin-bottom: 3rem;
