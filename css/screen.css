@@ -412,6 +412,9 @@ h1, h2, h3 {
 .library ul li section:nth-child(1) img.fatten {
     width: 90%;
 }
+.library ul li section:nth-child(1) img.extra-fatten {
+    width: 99%;
+}
 .library ul li section:nth-child(2) {
     height: 13rem;
     overflow: hidden;
