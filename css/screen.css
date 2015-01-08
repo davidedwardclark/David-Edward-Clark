@@ -217,7 +217,7 @@ h1, h2, h3 {
     float: left;
     text-align: right;
 }
-.article h1, .article h2, .article p, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
+.article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
     width: 69.6rem;
     padding-left: 25.2rem;
 }
@@ -230,6 +230,17 @@ h1, h2, h3 {
 .article h2  {
     margin-top: 3rem;
     font-weight: 300;
+    font-style: italic;
+}
+.article blockquote {
+    margin: 3rem 0;
+}
+.article blockquote p {
+    margin: 0;
+    padding: 0;
+}
+.article blockquote .author {
+    text-align: right;
     font-style: italic;
 }
 .article p {
@@ -564,7 +575,7 @@ h1, h2, h3 {
     .article h1 {
         clear: both;
     }
-    .article h1, .article h2, .article p, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
+    .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
         padding-left: 0;
     }
     .article .footnotes {
