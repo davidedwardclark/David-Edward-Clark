@@ -241,6 +241,7 @@ h1, h2, h3 {
 }
 .article blockquote .author {
     text-align: right;
+    font-size: 1.6rem;
     font-style: italic;
 }
 .article p {
@@ -446,7 +447,7 @@ h1, h2, h3 {
 }
 .library blockquote p.author {
     text-align: right;
-    font-size: 85%;
+    font-size: 1.6rem;
     font-style: italic;
 }
 
