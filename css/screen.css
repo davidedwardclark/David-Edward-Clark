@@ -432,12 +432,11 @@ h1, h2, h3 {
     overflow: hidden;
 }
 .library blockquote {
-    width: 69.6rem;
     margin-bottom: 2.5rem;
 }
 .library blockquote p {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 3rem;
+    line-height: 4rem;
 }
 .library blockquote p.quote {
     text-align: left;
@@ -447,7 +446,7 @@ h1, h2, h3 {
 }
 .library blockquote p.author {
     text-align: right;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     font-style: italic;
 }
 
@@ -529,12 +528,12 @@ h1, h2, h3 {
 
 /* Size: Tablets */
 @media screen and (max-width: 1056px) {
-    
+
     /* All */
     html {
         font-size: 10px;
     }
-    
+
     /* Header */
     #header section, #main {
         width: 69.6rem;
@@ -547,7 +546,7 @@ h1, h2, h3 {
     #header section nav ul li {
         margin-right: 3.5rem;
     }
-    
+
     /* Section: Home */
     .home #articles {
         margin-right: 0;
@@ -563,7 +562,7 @@ h1, h2, h3 {
     .home .date {
         text-align: left;
     }
-    
+
     /* Section: Article */
     .article .date {
         width: auto;
@@ -598,7 +597,7 @@ h1, h2, h3 {
         font-size: 1.6rem;
         line-height: 2.4rem;
     }
-    
+
     /* Section: Projects */
     .projects header {
         float: none;
@@ -642,7 +641,7 @@ h1, h2, h3 {
     .library blockquote {
         width: 100%;
     }
-    
+
     /* Section: About */
     .about .photo {
         width: 25rem;
@@ -684,12 +683,12 @@ h1, h2, h3 {
 
 /* Size: Mobile Landscape */
 @media screen and (max-width: 604px) {
-    
+
     /* All */
     html {
         font-size: 10px;
     }
-    
+
     /* Header */
     #header {
         min-width: 48rem;
@@ -721,7 +720,7 @@ h1, h2, h3 {
     #header section nav ul li:last-child {
         margin-right: 0;
     }
-    
+
     /* Home */
     .home #articles {
         width: 43rem;
@@ -729,7 +728,7 @@ h1, h2, h3 {
     .home #articles p {
         text-align: left;
     }
-    
+
     /* Article */
     .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
         width: 43rem;
@@ -737,7 +736,7 @@ h1, h2, h3 {
     .article p {
         text-align: left;
     }
-    
+
     /* Section: Projects */
     .projects header {
         width: 43rem;
@@ -793,7 +792,7 @@ h1, h2, h3 {
     .library .ideas li section:nth-child(3) {
         width: 43rem;
     }
-    
+
     /* Section: About */
     .about .photo {
         width: 30rem;
@@ -844,12 +843,12 @@ h1, h2, h3 {
 
 /* Size: Mobile Portrait */
 @media screen and (max-width: 387px) {
-    
+
     /* All */
     html {
         font-size: 10px;
     }
-    
+
     /* Header */
     #header {
         min-width: 32rem;
@@ -872,7 +871,7 @@ h1, h2, h3 {
     #header section nav ul li {
         margin-right: 2.475rem;
     }
-    
+
     /* Section: Home */
     .home #articles {
         width: 32rem;
@@ -880,7 +879,7 @@ h1, h2, h3 {
     .home .date {
         float: none;
     }
-    
+
     /* Section: Article */
     .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
         width: 32rem;
@@ -901,7 +900,7 @@ h1, h2, h3 {
     .article ol.footnotes {
         padding-left: 2rem;
     }
-    
+
     /* Section: Projects */
     .projects header {
         width: 32rem;
@@ -945,7 +944,7 @@ h1, h2, h3 {
     .library .ideas li section:nth-child(3) {
         width: 32rem;
     }
-    
+
     /* Section: About */
     .about .photo {
         width: 32rem;
@@ -973,7 +972,7 @@ h1, h2, h3 {
     .about .icon {
         width: 32rem;
     }
-    
+
 }
 
 /* At these sizes we *zoom* the layout */
@@ -1025,4 +1024,3 @@ h1, h2, h3 {
     p, h2, h3 { orphans: 3; widows: 3; }
     h2, h3 { page-break-after: avoid; }
 }
-
