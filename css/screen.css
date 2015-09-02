@@ -432,7 +432,7 @@ h1, h2, h3 {
     overflow: hidden;
 }
 .library blockquote {
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
 }
 .library blockquote p {
     font-size: 3rem;
@@ -442,12 +442,10 @@ h1, h2, h3 {
     text-align: left;
 }
 .library blockquote p.quote .qm {
-    margin-left: -0.9rem;
+    margin-left: -1.4rem;
 }
-.library blockquote p.author {
-    text-align: right;
-    font-size: 2.4rem;
-    font-style: italic;
+.library blockquote p em {
+    color: #999999;
 }
 
 /* Section: About */
