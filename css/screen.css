@@ -83,6 +83,13 @@ td { vertical-align: top; }
    ========================================================================== */
 
 img, object { max-width: 100%; }
+img[src$=".png"] {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+}
 
 
 /* =============================================================================
@@ -446,6 +453,7 @@ h1, h2, h3 {
 }
 .library blockquote p em {
     color: #999999;
+    white-space: nowrap;
 }
 
 /* Section: About */
