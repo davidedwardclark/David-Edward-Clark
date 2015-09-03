@@ -83,12 +83,8 @@ td { vertical-align: top; }
    ========================================================================== */
 
 img, object { max-width: 100%; }
-img[src$=".png"] {
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
+.optimize-contrast {
     image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor;
 }
 
 
