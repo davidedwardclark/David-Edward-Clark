@@ -237,10 +237,9 @@ h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
-.article blockquote .author {
-    text-align: right;
-    font-size: 1.6rem;
+.article blockquote em {
     font-style: italic;
+    color: #999999;
 }
 .article p {
     text-indent: 0;
