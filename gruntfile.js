@@ -1,3 +1,16 @@
+// **********************
+
+// TEMP
+// To do:
+// 1. Make sure build script works and files upload: https://github.com/MathieuLoutre/grunt-aws-s3
+// 2. Add gziping with grunt-contrib-compress: https://github.com/gruntjs/grunt-contrib-compress
+
+// **********************
+
+
+
+
+
 module.exports = function (grunt) {
 
     grunt.initConfig({
@@ -77,235 +90,85 @@ module.exports = function (grunt) {
 
         // Deploy to S3
         aws: grunt.file.readJSON(process.env.HOME+'/.grunt_aws'),
-        s3: {
+        aws_s3: {
             options: {
-                key: '<%= aws.key %>',
-                secret: '<%= aws.secret %>',
-                bucket: 'www.davidedwardclark.com',
-                access: 'public-read'
+                accessKeyId: '<%= aws.key %>',
+                secretAccessKey: '<%= aws.secret %>',
+                region: 'us-east-1', // http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region
+                uploadConcurrency: 5, // 5 simultaneous uploads
+                downloadConcurrency: 5 // 5 simultaneous downloads
             },
-            dev: {
+            production: {
                 options: {
-                    maxOperations: 20
+                    bucket: 'www.davidedwardclark.com',
                 },
-                sync: [
-                    {
-                        options: {
-                            verify: true,
-                            headers: {
-                                "Content-Type": "image/x-icon",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: '*.ico',
-                        dest: ''
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "text/html",
-                                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
-                                "Expires": "Fri, 01 Jan 1990 00:00:00 GMT"
-                            }
-                        },
-                        src: 'build/*.html',
-                        dest: ''
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "text/html",
-                                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
-                                "Expires": "Fri, 01 Jan 1990 00:00:00 GMT"
-                            }
-                        },
-                        src: 'build/about/*.html',
-                        dest: 'about/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "text/html",
-                                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
-                                "Expires": "Fri, 01 Jan 1990 00:00:00 GMT"
-                            }
-                        },
-                        src: 'build/library/*.html',
-                        dest: 'library/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "text/html",
-                                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
-                                "Expires": "Fri, 01 Jan 1990 00:00:00 GMT"
-                            }
-                        },
-                        src: 'build/projects/*.html',
-                        dest: 'projects/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "text/html",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: 'projects/epicureslider/*.html',
-                        dest: 'projects/epicureslider/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "text/css",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: 'projects/epicureslider/css/*.css',
-                        dest: 'projects/epicureslider/css/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            headers: {
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: 'projects/epicureslider/img/**/*',
-                        dest: 'projects/epicureslider/img/',
-                        rel: 'projects/epicureslider/img/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "application/javascript",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: 'projects/epicureslider/js/**/*',
-                        dest: 'projects/epicureslider/js/',
-                        rel: 'projects/epicureslider/js/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "text/html",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: 'projects/thehub/*.html',
-                        dest: 'projects/thehub/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "text/css",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: 'projects/thehub/css/*.css',
-                        dest: 'projects/thehub/css/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            headers: {
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: 'projects/thehub/img/**/*',
-                        dest: 'projects/thehub/img/',
-                        rel: 'projects/thehub/img/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "application/javascript",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: 'projects/thehub/js/*.js',
-                        dest: 'projects/thehub/js/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            headers: {
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: 'build/img/**/*',
-                        dest: 'img/',
-                        rel: 'build/img/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "text/css",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: 'build/css/*.css',
-                        dest: 'css/'
-                    },
-                    {
-                        options: {
-                            verify: true,
-                            gzip: true,
-                            headers: {
-                                "Content-Encoding": "gzip",
-                                "Content-Type": "application/javascript",
-                                "Cache-Control": "max-age=630720000, public",
-                                "Expires": new Date(Date.now() + 63072000000).toUTCString()
-                            }
-                        },
-                        src: 'build/js/*.js',
-                        dest: 'js/'
-                    }
+                files: [
+                    {expand: true, cwd: '/', src: ['*.ico'], dest: '/', params: {
+                        ContentType: 'image/x-icon',
+                        CacheControl: 'max-age=630720000, public'
+                    }},
+                    {expand: true, cwd: '/build/', src: ['*.html'], dest: '/', params: {
+                        ContentType: 'text/html',
+                        CacheControl: 'no-cache, no-store, max-age=0, must-revalidate'
+                    }},
+                    {expand: true, cwd: '/build/', src: ['*.html'], dest: '/', params: {
+                        ContentType: 'text/html',
+                        CacheControl: 'no-cache, no-store, max-age=0, must-revalidate'
+                    }},
+                    {expand: true, cwd: '/build/about/', src: ['*.html'], dest: '/about/', params: {
+                        ContentType: 'text/html',
+                        CacheControl: 'no-cache, no-store, max-age=0, must-revalidate'
+                    }},
+                    {expand: true, cwd: '/build/library/', src: ['*.html'], dest: '/library/', params: {
+                        ContentType: 'text/html',
+                        CacheControl: 'no-cache, no-store, max-age=0, must-revalidate'
+                    }},
+                    {expand: true, cwd: '/build/projects/', src: ['*.html'], dest: '/projects/', params: {
+                        ContentType: 'text/html',
+                        CacheControl: 'no-cache, no-store, max-age=0, must-revalidate'
+                    }},
+                    {expand: true, cwd: '/projects/epicureslider/', src: ['*.html'], dest: '/projects/epicureslider/', params: {
+                        ContentType: 'text/html',
+                        CacheControl: 'max-age=630720000, public'
+                    }},
+                    {expand: true, cwd: '/projects/epicureslider/css/', src: ['*.css'], dest: '/projects/epicureslider/css/', params: {
+                        ContentType: 'text/html',
+                        CacheControl: 'max-age=630720000, public'
+                    }},
+                    {expand: true, cwd: '/projects/epicureslider/img/', src: ['**/*'], dest: '/projects/epicureslider/img/', params: {
+                        ContentType: 'text/html',
+                        CacheControl: 'max-age=630720000, public'
+                    }},
+                    {expand: true, cwd: '/projects/epicureslider/js/', src: ['**/*'], dest: '/projects/epicureslider/js/', params: {
+                        ContentType: 'application/javascript',
+                        CacheControl: 'max-age=630720000, public'
+                    }},
+                    {expand: true, cwd: '/projects/thehub/', src: ['*.html'], dest: '/projects/thehub/', params: {
+                        ContentType: 'text/html',
+                        CacheControl: 'max-age=630720000, public'
+                    }},
+                    {expand: true, cwd: '/projects/thehub/css/', src: ['*.css'], dest: '/projects/thehub/css/', params: {
+                        ContentType: 'text/html',
+                        CacheControl: 'max-age=630720000, public'
+                    }},
+                    {expand: true, cwd: '/projects/thehub/img/', src: ['**/*'], dest: '/projects/thehub/img/', params: {
+                        CacheControl: 'max-age=630720000, public'
+                    }},
+                    {expand: true, cwd: '/projects/thehub/js/', src: ['*.js'], dest: '/projects/thehub/js/', params: {
+                        ContentType: 'application/javascript',
+                        CacheControl: 'max-age=630720000, public'
+                    }},
+                    {expand: true, cwd: '/build/img/', src: ['**/*'], dest: '/img/', params: {
+                        CacheControl: 'max-age=630720000, public'
+                    }},
+                    {expand: true, cwd: '/build/css/', src: ['*.css'], dest: '/css/', params: {
+                        ContentType: 'text/html',
+                        CacheControl: 'max-age=630720000, public'
+                    }},
+                    {expand: true, cwd: '/build/js/', src: ['*.js'], dest: '/js/', params: {
+                        ContentType: 'application/javascript',
+                        CacheControl: 'max-age=630720000, public'
+                    }}
                 ]
             }
         },
@@ -319,10 +182,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-hashres');
-    grunt.loadNpmTasks('grunt-s3');
+    grunt.loadNpmTasks('grunt-aws-s3');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     // On run
-    grunt.registerTask('default', ['copy', 'cssmin', 'concat', 'uglify', 'imagemin', 'hashres', 's3', 'clean']);
+    grunt.registerTask('default', ['copy', 'cssmin', 'concat', 'uglify', 'imagemin', 'hashres', 'aws_s3', 'clean']);
 
 };
