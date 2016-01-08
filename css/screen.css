@@ -441,7 +441,7 @@ h1, h2, h3 {
 .library blockquote p.quote .qm {
     margin-left: -1.4rem;
 }
-.library blockquote p em {
+.library blockquote p em.author {
     color: #999999;
     white-space: nowrap;
 }
