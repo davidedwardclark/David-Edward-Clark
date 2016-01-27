@@ -156,11 +156,10 @@ h1, h2, h3 {
 }
 
 /* Section: Home */
-.home #articles {
+.home #notes {
     float: left;
-    width: 69.6rem;
+    width: 94.8rem;
     margin-right: 6rem;
-    margin-left: 25.2rem;
 }
 .home .meta {
     float: left;
@@ -170,15 +169,15 @@ h1, h2, h3 {
 .home .date {
     text-align: right;
 }
-.home #articles .meta aside {
+.home #notes .meta aside {
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: #999999;
     margin-top: 0.4rem;
 }
-.home #articles h2 {
-    font-size: 6rem;
-    line-height: 6.5rem;
+.home #notes h2 {
+    font-size: 8rem;
+    line-height: 8rem;
     margin-bottom: 3rem;
     font-weight: bold;
 }
@@ -544,7 +543,8 @@ h1, h2, h3 {
     }
 
     /* Section: Home */
-    .home #articles {
+    .home #notes {
+        width: 75.6rem;
         margin-right: 0;
         margin-left: 0;
     }
@@ -552,8 +552,13 @@ h1, h2, h3 {
         float: none;
         margin-left: 0;
     }
-    .home #articles .meta aside {
+    .home #notes .meta aside {
         margin-top: 0;
+    }
+    .home #notes h2 {
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-bottom: 2.5rem;
     }
     .home .date {
         text-align: left;
@@ -718,10 +723,15 @@ h1, h2, h3 {
     }
 
     /* Home */
-    .home #articles {
+    .home #notes {
         width: 43rem;
     }
-    .home #articles p {
+    .home #notes h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+        margin-bottom: 2rem;
+    }
+    .home #notes p {
         text-align: left;
     }
 
@@ -869,8 +879,13 @@ h1, h2, h3 {
     }
 
     /* Section: Home */
-    .home #articles {
+    .home #notes {
         width: 32rem;
+    }
+    .home #notes h2 {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 3rem;
     }
     .home .date {
         float: none;
