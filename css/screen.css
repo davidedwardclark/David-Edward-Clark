@@ -155,157 +155,6 @@ h1, h2, h3 {
     padding: 0 6rem;
 }
 
-/* Section: Home */
-.home #notes {
-    float: left;
-    width: 94.8rem;
-    margin-right: 6rem;
-}
-.home .meta {
-    float: left;
-    margin-left: -25.2rem;
-    width: 19.2rem;
-}
-.home .date {
-    text-align: right;
-}
-.home #notes .meta aside {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    color: #999999;
-    margin-top: 0.4rem;
-}
-.home #notes h2 {
-    font-size: 7rem;
-    line-height: 7rem;
-    margin-bottom: 3rem;
-    font-weight: bold;
-}
-.home #about-summary {
-    float: left;
-    width: 19.2rem;
-}
-.home #about-summary h2, .home #about-summary ul li, .home #about-summary p {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    font-weight: 300;
-}
-.home #about-summary h2 {
-    color: #444444;
-    font-weight: bold;
-}
-.home #about-summary ul, .home #about-summary p {
-    margin-bottom: 2.4rem;
-}
-.home #about-summary ul li, .home #about-summary p {
-    color: #999999;
-}
-
-/* Section: Article */
-.article .date, .article aside {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    color: #999999;
-}
-.article .date {
-    width: 19.2rem;
-}
-.article .date {
-    float: left;
-    text-align: right;
-}
-.article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
-    width: 69.6rem;
-    padding-left: 25.2rem;
-}
-.article h1, .article h2  {
-    margin: 0 0 3rem 0;
-}
-.article h1 {
-    font-weight: bold;
-}
-.article h2  {
-    margin-top: 3rem;
-    font-weight: 300;
-    font-style: italic;
-}
-.article blockquote {
-    margin: 3rem 0;
-}
-.article blockquote p {
-    margin: 0;
-    padding: 0;
-}
-.article blockquote em {
-    font-style: italic;
-    color: #999999;
-}
-.article p {
-    text-indent: 0;
-}
-.article p:last-child {
-    margin-bottom: 3rem;
-}
-.article p + p, .article p + aside + p {
-    text-indent: 4rem;
-}
-.article ul, .article ol, .article pre {
-    margin: 3rem 0;
-}
-.article ul li {
-    background: transparent url(/img/bullet.png) no-repeat 0 1rem;
-    background-size: 6px 6px;
-    padding-left: 1.5rem;
-    margin-left: -1.5rem;
-}
-.article ol li {
-    list-style-type: decimal;
-}
-.article aside {
-    width: 19.2rem;
-    margin-top: 0.4rem;
-}
-.article .left {
-    float: left;
-    text-align: right;
-}
-.article .right {
-    float: right;
-}
-.article figure {
-    margin: 3rem 0;
-}
-.article figcaption {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    font-style: italic;
-}
-.article pre {
-    background-color: #000000;
-    padding: 3rem;
-    border-radius: 0.5rem;
-    margin-left: 0;
-    margin-right: 0;
-}
-.article pre, .article code {
-    font-family: Menlo, Monaco, monospace;
-    font-size: 2rem;
-    line-height: 3rem;
-    color: #ffffff;
-}
-.article .footnotes {
-    border-top: 1px solid #666666;
-    padding-top: 3rem;
-    padding-left: 0;
-    margin-left: 25.2rem;
-}
-.article .footnotes li {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    font-style: italic;
-    margin-bottom: 2.4rem;
-}
-
 /* Section: Projects */
 .projects article {
     margin-bottom: 4rem;
@@ -445,6 +294,128 @@ h1, h2, h3 {
     white-space: nowrap;
 }
 
+/* Section: Notes */
+#notes {
+    float: left;
+    width: 94.8rem;
+    margin-right: 6rem;
+}
+#notes .meta aside {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #999999;
+    margin-top: 0.4rem;
+}
+#notes h2 {
+    font-size: 7rem;
+    line-height: 7rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+.article .date, .article aside {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #999999;
+}
+.article .date {
+    width: 19.2rem;
+}
+.article .date {
+    float: left;
+    text-align: right;
+}
+.article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
+    width: 69.6rem;
+    padding-left: 25.2rem;
+}
+.article h1, .article h2  {
+    margin: 0 0 3rem 0;
+}
+.article h1 {
+    font-weight: bold;
+}
+.article h2  {
+    margin-top: 3rem;
+    font-weight: 300;
+    font-style: italic;
+}
+.article blockquote {
+    margin: 3rem 0;
+}
+.article blockquote p {
+    margin: 0;
+    padding: 0;
+}
+.article blockquote em {
+    font-style: italic;
+    color: #999999;
+}
+.article p {
+    text-indent: 0;
+}
+.article p:last-child {
+    margin-bottom: 3rem;
+}
+.article p + p, .article p + aside + p {
+    text-indent: 4rem;
+}
+.article ul, .article ol, .article pre {
+    margin: 3rem 0;
+}
+.article ul li {
+    background: transparent url(/img/bullet.png) no-repeat 0 1rem;
+    background-size: 6px 6px;
+    padding-left: 1.5rem;
+    margin-left: -1.5rem;
+}
+.article ol li {
+    list-style-type: decimal;
+}
+.article aside {
+    width: 19.2rem;
+    margin-top: 0.4rem;
+}
+.article .left {
+    float: left;
+    text-align: right;
+}
+.article .right {
+    float: right;
+}
+.article figure {
+    margin: 3rem 0;
+}
+.article figcaption {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-style: italic;
+}
+.article pre {
+    background-color: #000000;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+.article pre, .article code {
+    font-family: Menlo, Monaco, monospace;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #ffffff;
+}
+.article .footnotes {
+    border-top: 1px solid #666666;
+    padding-top: 3rem;
+    padding-left: 0;
+    margin-left: 25.2rem;
+}
+.article .footnotes li {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-style: italic;
+    margin-bottom: 2.4rem;
+}
+
 /* Section: About */
 .about .photo {
     float: left;
@@ -542,63 +513,6 @@ h1, h2, h3 {
         margin-right: 3.5rem;
     }
 
-    /* Section: Home */
-    .home #notes {
-        width: 75.6rem;
-        margin-right: 0;
-        margin-left: 0;
-    }
-    .home .meta {
-        float: none;
-        margin-left: 0;
-    }
-    .home #notes .meta aside {
-        margin-top: 0;
-    }
-    .home #notes h2 {
-        font-size: 6rem;
-        line-height: 6rem;
-        margin-bottom: 2.5rem;
-    }
-    .home .date {
-        text-align: left;
-    }
-
-    /* Section: Article */
-    .article .date {
-        width: auto;
-        text-align: left;
-        margin: 0;
-    }
-    .article .date {
-        float: left;
-    }
-    .article h1 {
-        clear: both;
-    }
-    .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
-        padding-left: 0;
-    }
-    .article .footnotes {
-        margin-left: 0;
-    }
-    .article .left, .article .right {
-        float: none;
-        text-align: left;
-        width: auto;
-        margin: 3rem 0;
-        padding: 1rem 0;
-        border-top: 1px solid #efefef;
-        border-bottom: 1px solid #efefef;
-    }
-    .article figure {
-        margin: 3rem 0;
-    }
-    .article figcaption {
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-    }
-
     /* Section: Projects */
     .projects header {
         float: none;
@@ -641,6 +555,54 @@ h1, h2, h3 {
     }
     .library blockquote {
         width: 100%;
+    }
+
+    /* Section: Notes */
+    #notes {
+        width: 75.6rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #notes .meta aside {
+        margin-top: 0;
+    }
+    #notes h2 {
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-bottom: 2.5rem;
+    }
+    .article .date {
+        width: auto;
+        text-align: left;
+        margin: 0;
+    }
+    .article .date {
+        float: left;
+    }
+    .article h1 {
+        clear: both;
+    }
+    .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
+        padding-left: 0;
+    }
+    .article .footnotes {
+        margin-left: 0;
+    }
+    .article .left, .article .right {
+        float: none;
+        text-align: left;
+        width: auto;
+        margin: 3rem 0;
+        padding: 1rem 0;
+        border-top: 1px solid #efefef;
+        border-bottom: 1px solid #efefef;
+    }
+    .article figure {
+        margin: 3rem 0;
+    }
+    .article figcaption {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
     }
 
     /* Section: About */
@@ -722,27 +684,6 @@ h1, h2, h3 {
         margin-right: 0;
     }
 
-    /* Home */
-    .home #notes {
-        width: 43rem;
-    }
-    .home #notes h2 {
-        font-size: 5rem;
-        line-height: 5rem;
-        margin-bottom: 2rem;
-    }
-    .home #notes p {
-        text-align: left;
-    }
-
-    /* Article */
-    .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
-        width: 43rem;
-    }
-    .article p {
-        text-align: left;
-    }
-
     /* Section: Projects */
     .projects header {
         width: 43rem;
@@ -797,6 +738,25 @@ h1, h2, h3 {
     .library .ideas li section:nth-child(2),
     .library .ideas li section:nth-child(3) {
         width: 43rem;
+    }
+
+    /* Section: Notes */
+    #notes {
+        width: 43rem;
+    }
+    #notes h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+        margin-bottom: 2rem;
+    }
+    #notes p {
+        text-align: left;
+    }
+    .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
+        width: 43rem;
+    }
+    .article p {
+        text-align: left;
     }
 
     /* Section: About */
@@ -878,40 +838,6 @@ h1, h2, h3 {
         margin-right: 2.475rem;
     }
 
-    /* Section: Home */
-    .home #notes {
-        width: 32rem;
-    }
-    .home #notes h2 {
-        font-size: 4rem;
-        line-height: 4rem;
-        margin-bottom: 3rem;
-    }
-    .home .date {
-        float: none;
-    }
-
-    /* Section: Article */
-    .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
-        width: 32rem;
-    }
-    .article ul, .article ol {
-        width: 30rem;
-    }
-    .article .date {
-        float: none;
-    }
-    .article p + p, .article p + aside + p {
-        text-indent: 2rem;
-    }
-    .article ul, .article ol {
-        margin-left: 3rem;
-        margin-right: 0;
-    }
-    .article ol.footnotes {
-        padding-left: 2rem;
-    }
-
     /* Section: Projects */
     .projects header {
         width: 32rem;
@@ -954,6 +880,35 @@ h1, h2, h3 {
     .library .ideas li section:nth-child(2),
     .library .ideas li section:nth-child(3) {
         width: 32rem;
+    }
+
+    /* Section: Notes */
+    #notes {
+        width: 32rem;
+    }
+    #notes h2 {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 3rem;
+    }
+    .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
+        width: 32rem;
+    }
+    .article ul, .article ol {
+        width: 30rem;
+    }
+    .article .date {
+        float: none;
+    }
+    .article p + p, .article p + aside + p {
+        text-indent: 2rem;
+    }
+    .article ul, .article ol {
+        margin-left: 3rem;
+        margin-right: 0;
+    }
+    .article ol.footnotes {
+        padding-left: 2rem;
     }
 
     /* Section: About */
