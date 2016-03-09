@@ -600,11 +600,10 @@ Media Queries
 	/* Section: About */
 	.about .photo {
 		width: 25rem;
-		height: 25rem;
 		margin: 0 3rem 3rem 0;
 	}
 	.about h1 {
-		padding: 3.5rem 0;
+		padding: 9rem 0 0 0;
 		margin: 0;
 		font-size: 3rem;
 	}
@@ -754,7 +753,6 @@ Media Queries
 	/* Section: About */
 	.about .photo {
 		width: 30rem;
-		height: 30rem;
 		margin: 0 0 0 7rem;
 	}
 	.about h1 {
@@ -906,7 +904,6 @@ Media Queries
 	/* Section: About */
 	.about .photo {
 		width: 32rem;
-		height: 32rem;
 		margin: 0;
 	}
 	.about h1 {
