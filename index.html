@@ -24,7 +24,7 @@
 		</section>
 	</header>
 	<section id="main" class="projects">
-		<article class="clearfix nodemo">
+		<article id="text-and-pixel-identity" class="clearfix nodemo">
 			<header>
 				<aside class="date">Fall 2015</aside>
 				<h2>Text&amp;Pixel Identity</h2>
@@ -36,7 +36,7 @@
 				</div>
 			</section>
 		</article>
-		<article class="clearfix nodemo">
+		<article id="text-and-pixel-logo" class="clearfix nodemo">
 			<header>
 				<aside class="date">Summer 2015</aside>
 				<h2>Text&amp;Pixel Logo</h2>
@@ -48,93 +48,138 @@
 				</div>
 			</section>
 		</article>
-		<article class="clearfix nodemo">
+		<article id="suggestion-box" class="clearfix nodemo">
 			<header>
 				<aside class="date">Winter 2015</aside>
 				<h2>Suggestion Box</h2>
 				<p>Web interface designed for receiving and displaying team related feedback. Made for an internal group at Cisco.</p>
 			</header>
 			<section>
-				<div>
-					<img src="/img/projects/suggestionbox-1.png">
-				</div>
+				<div></div>
 			</section>
 		</article>
-		<article class="clearfix nodemo">
+		<article id="mockup-review" class="clearfix nodemo">
 			<header>
 				<aside class="date">Spring 2014</aside>
 				<h2>Mockup Review</h2>
 				<p>Single page web application designed for browsing and approving mockups.</p>
 			</header>
 			<section>
-				<div>
-					<img src="/img/projects/mockup-review-site-1.png">
-				</div>
+				<div></div>
 			</section>
 		</article>
-		<article class="clearfix">
+		<article id="node-tac-toe" class="clearfix">
 			<header>
 				<aside class="date">Fall 2013</aside>
 				<h2>Node Tac Toe</h2>
 				<p>Two player Tic Tac Toe in the browser. Designed on paper and written in JavaScript.</p>
 			</header>
 			<section>
-				<div class="framed">
-					<img src="/img/projects/nodetactoe-1.png">
-				</div>
+				<div class="framed"></div>
 			</section>
 		</article>
-		<article class="clearfix nodemo">
+		<article id="marian-clark-landscapes" class="clearfix nodemo">
 			<header>
 				<aside class="date">Summer 2012</aside>
 				<h2>Marian Clark Landscapes</h2>
 				<p>The portfolio of a landscape architect &amp; garden designer. Layed out on a grid to emphasize the photographs. Set in Bodoni &amp; Futura.</p>
 			</header>
 			<section>
-				<div class="framed">
-					<img src="/img/projects/marianclark-1.png">
-				</div>
+				<div class="framed"></div>
 			</section>
 		</article>
-		<article class="clearfix">
+		<article id="the-hub-staff-intranet" class="clearfix">
 			<header>
 				<aside class="date">Fall 2011</aside>
 				<h2>The Hub Staff Intranet</h2>
 				<p>Employee facing intranet with a layout that adapts to mobile &amp; tablets. Coquette &amp; Myriad served via TypeKit.</p>
 			</header>
 			<section>
-				<div class="straight">
-					<img src="/img/projects/thehub-1.png">
-				</div>
+				<div class="straight"></div>
 			</section>
 		</article>
-		<article class="clearfix">
+		<article id="epicure-slider" class="clearfix">
 			<header>
 				<aside class="date">Fall 2010</aside>
 				<h2>Epicure Slider</h2>
 				<p>With a strong emphasis on layout, type and photography this mini site was built to demonstrate ways in which Epicure could market its products online.</p>
 			</header>
-			<section>
-				<div class="straight">
-					<img src="/img/projects/epicureslider-1.png">
-				</div>
-				<div class="straight">
-					<img src="/img/projects/epicureslider-2.png">
-				</div>
-			</section>
+			<section></section>
 		</article>
-		<article class="clearfix nodemo">
+		<article id="everyday-epicure" class="clearfix nodemo">
 			<header>
 				<aside class="date">Summer 2010</aside>
 				<h2>Everday Epicure</h2>
 				<p>This blog was designed to showcase Epicure’s food photography &amp; popular recipes. Fonts served via Typekit.</p>
 			</header>
 			<section>
-				<div class="framed no-top-padding">
-					<img src="/img/projects/everydayepicure-1.jpg">
-				</div>
+				<div class="framed no-top-padding"></div>
 			</section>
 		</article>
 	</section>
+	<script>
+		var sectionOneLoaded = false;
+		var sectionTwoLoaded = false;
+		var sectionThreeLoaded = false;
+
+		var lazyLoad = function() {
+
+			if (window.scrollY >= 225 && !sectionOneLoaded) {
+
+				// Suggestion Box
+				var container = document.querySelector("#suggestion-box section div");
+				container.innerHTML = '<img src="/img/projects/suggestionbox-1.png">';
+
+				// Mockup Review
+				var container = document.querySelector("#mockup-review section div");
+				container.innerHTML = '<img src="/img/projects/mockup-review-site-1.png">';
+
+				sectionOneLoaded = true;
+
+			}
+
+			if (window.scrollY >= 1475 && !sectionTwoLoaded) {
+
+				// Node Tac Toe
+				var container = document.querySelector("#node-tac-toe section div");
+				container.innerHTML = '<img src="/img/projects/nodetactoe-1.jpg">';
+
+				// Marian Clark Landscapes
+				var container = document.querySelector("#marian-clark-landscapes section div");
+				container.innerHTML = '<img src="/img/projects/marianclark-1.jpg">';
+
+				sectionTwoLoaded = true;
+
+			}
+
+			if (window.scrollY >= 3045 && !sectionThreeLoaded) {
+
+				// The Hub Staff Intranet
+				var container = document.querySelector("#the-hub-staff-intranet section div");
+				container.innerHTML = '<img src="/img/projects/thehub-1.png">';
+
+				// Epicure Slider
+				var container = document.querySelector("#epicure-slider section");
+				container.innerHTML = '<div class="straight"><img src="/img/projects/epicureslider-1.png"></div><div class="straight"><img src="/img/projects/epicureslider-2.png"></div>';
+
+				sectionThreeLoaded = true;
+
+			}
+
+			if (window.scrollY >= 5525) {
+
+				// Remove the event listener
+				window.removeEventListener('scroll', lazyLoad, false);
+
+				// Everyday Epicure
+				var container = document.querySelector("#everyday-epicure section div");
+				container.innerHTML = '<img src="/img/projects/everydayepicure-1.jpg">';
+
+			}
+
+		}
+
+		window.addEventListener('scroll', lazyLoad, false);
+	</script>
 </body>
 </html>

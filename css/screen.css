@@ -252,6 +252,9 @@ h1, h2, h3 {
 .library section {
 	position: relative;
 }
+.library ul li section img {
+	box-shadow: 0px 0px 3px #aaaaaa;
+}
 .library ul li section:nth-child(1) {
 	height: 23rem;
 }
