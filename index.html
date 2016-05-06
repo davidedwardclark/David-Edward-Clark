@@ -124,7 +124,7 @@
 
 		var lazyLoad = function() {
 
-			if (window.scrollY >= 225 && !sectionOneLoaded) {
+			if (window.scrollY >= 200 && !sectionOneLoaded) {
 
 				// Suggestion Box
 				var container = document.querySelector("#suggestion-box section div");
@@ -138,7 +138,7 @@
 
 			}
 
-			if (window.scrollY >= 1475 && !sectionTwoLoaded) {
+			if (window.scrollY >= 1000 && !sectionTwoLoaded) {
 
 				// Node Tac Toe
 				var container = document.querySelector("#node-tac-toe section div");
@@ -152,7 +152,7 @@
 
 			}
 
-			if (window.scrollY >= 3045 && !sectionThreeLoaded) {
+			if (window.scrollY >= 2500 && !sectionThreeLoaded) {
 
 				// The Hub Staff Intranet
 				var container = document.querySelector("#the-hub-staff-intranet section div");
@@ -166,7 +166,7 @@
 
 			}
 
-			if (window.scrollY >= 5525) {
+			if (window.scrollY >= 4000) {
 
 				// Remove the event listener
 				window.removeEventListener('scroll', lazyLoad, false);

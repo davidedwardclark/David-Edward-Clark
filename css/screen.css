@@ -700,7 +700,6 @@ Media Queries
 	}
 	.projects section {
 		width: 43rem;
-		margin-top: 4.5rem;
 	}
 	.projects .nodemo section {
 		margin-top: 3rem;
@@ -848,7 +847,6 @@ Media Queries
 	}
 	.projects section {
 		width: 32rem;
-		margin-top: 4.5rem;
 	}
 
 	/* Section: Library */
