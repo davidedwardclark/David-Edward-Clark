@@ -365,10 +365,10 @@ h1, h2, h3 {
 	margin: 3rem 0;
 }
 .article ul li {
-	background: transparent url(/img/bullet.png) no-repeat 0 1.25rem;
+	background: transparent url(/img/bullet.png) no-repeat 0 1.35rem;
 	background-size: 6px 6px;
-	padding-left: 1.5rem;
-	margin-left: -1.5rem;
+	padding-left: 2rem;
+	margin-left: -2rem;
 }
 .article ol li {
 	list-style-type: decimal;
@@ -505,9 +505,6 @@ Media Queries
 		width: 69.6rem;
 		padding-left: 3rem;
 		padding-right: 3rem;
-	}
-	#header section {
-		margin-top: 2rem;
 	}
 	#header section nav ul li {
 		margin-right: 3.5rem;
