@@ -490,7 +490,13 @@ Media Queries
 
 /* At these sizes we *zoom* the layout */
 @media screen and (max-width: 1320px) { html { font-size: 9px; } }
-@media screen and (max-width: 1188px) { html { font-size: 8px; } }
+@media screen and (max-width: 1188px) {
+	html { font-size: 8px; }
+	/* Fix bullet points */
+	.article ul li {
+		background-position: 0 1.15rem;
+	}
+}
 
 /* Size: Tablets */
 @media screen and (max-width: 1056px) {
@@ -596,6 +602,9 @@ Media Queries
 		font-size: 1.6rem;
 		line-height: 2.4rem;
 	}
+	.article ul li {
+		background-position: 0 1.35rem;
+	}
 
 	/* Section: About */
 	.about .photo {
@@ -633,7 +642,13 @@ Media Queries
 
 /* At these sizes we *zoom* the layout */
 @media screen and (max-width: 756px) { html { font-size: 9px; } }
-@media screen and (max-width: 680px) { html { font-size: 8px; } }
+@media screen and (max-width: 680px) {
+	html { font-size: 8px; }
+	/* Fix bullet points */
+	.article ul li {
+		background-position: 0 1.15rem;
+	}
+}
 
 /* Size: Mobile Landscape */
 @media screen and (max-width: 604px) {
@@ -748,6 +763,9 @@ Media Queries
 	.article p {
 		text-align: left;
 	}
+	.article ul li {
+		background-position: 0 1.35rem;
+	}
 
 	/* Section: About */
 	.about .photo {
@@ -794,7 +812,13 @@ Media Queries
 
 /* At these sizes we *zoom* the layout */
 @media screen and (max-width: 480px) { html { font-size: 9px; } }
-@media screen and (max-width: 431px) { html { font-size: 8px; } }
+@media screen and (max-width: 431px) {
+	html { font-size: 8px; }
+	/* Fix bullet points */
+	.article ul li {
+		background-position: 0 1.15rem;
+	}
+}
 
 /* Size: Mobile Portrait */
 @media screen and (max-width: 387px) {
@@ -898,6 +922,9 @@ Media Queries
 	.article ol.footnotes {
 		padding-left: 2rem;
 	}
+	.article ul li {
+		background-position: 0 1.35rem;
+	}
 
 	/* Section: About */
 	.about .photo {
@@ -929,7 +956,13 @@ Media Queries
 }
 
 /* At these sizes we *zoom* the layout */
-@media screen and (max-width: 320px) { html { font-size: 9px; } }
+@media screen and (max-width: 320px) {
+	html { font-size: 9px; }
+	/* Fix bullet points */
+	.article ul li {
+		background-position: 0 1.15rem;
+	}
+}
 @media screen and (max-width: 288px) { html { font-size: 8px; } }
 
 
