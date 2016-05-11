@@ -32,7 +32,7 @@
 			</header>
 			<section>
 				<div>
-					<img src="/img/projects/atlantic-mobile-mockups-1.jpg" alt="Four atlantic mobile mockups. Each screen depicts a different part of a escalation management system.">
+					<img src="/img/projects/atlantic-mobile-mockups-1.png" alt="Four atlantic mobile mockups. Each screen depicts a different part of a escalation management system.">
 				</div>
 			</section>
 		</article>
@@ -55,9 +55,7 @@
 				<p>Made for a web studio specialising in branding and identity design. Typeface: FF Din.</p>
 			</header>
 			<section>
-				<div>
-					<img src="/img/projects/textandpixel-1.png" alt="The Text&amp;Pixel logo is a bee with a green body and pink wings.">
-				</div>
+				<div></div>
 			</section>
 		</article>
 		<article id="suggestion-box" class="clearfix nodemo">
@@ -133,10 +131,21 @@
 		var sectionOneLoaded = false;
 		var sectionTwoLoaded = false;
 		var sectionThreeLoaded = false;
+		var sectionFourLoaded = false;
 
 		var lazyLoad = function() {
 
 			if (window.scrollY >= 200 && !sectionOneLoaded) {
+
+				// Suggestion Box
+				var container = document.querySelector("#text-and-pixel-logo section div");
+				container.innerHTML = '<img src="/img/projects/textandpixel-1.png" alt="The Text&amp;Pixel logo is a bee with a green body and pink wings.">';
+
+				sectionOneLoaded = true;
+
+			}
+
+			if (window.scrollY >= 600 && !sectionTwoLoaded) {
 
 				// Suggestion Box
 				var container = document.querySelector("#suggestion-box section div");
@@ -146,11 +155,11 @@
 				var container = document.querySelector("#mockup-review section div");
 				container.innerHTML = '<img src="/img/projects/mockup-review-site-1.png" alt="A web application for displaying mockups.">';
 
-				sectionOneLoaded = true;
+				sectionTwoLoaded = true;
 
 			}
 
-			if (window.scrollY >= 1000 && !sectionTwoLoaded) {
+			if (window.scrollY >= 1000 && !sectionThreeLoaded) {
 
 				// Node Tac Toe
 				var container = document.querySelector("#node-tac-toe section div");
@@ -160,11 +169,11 @@
 				var container = document.querySelector("#marian-clark-landscapes section div");
 				container.innerHTML = '<img src="/img/projects/marianclark-1.jpg" alt="A website with photos of gardens designed by a landscape architect.">';
 
-				sectionTwoLoaded = true;
+				sectionThreeLoaded = true;
 
 			}
 
-			if (window.scrollY >= 2500 && !sectionThreeLoaded) {
+			if (window.scrollY >= 2500 && !sectionFourLoaded) {
 
 				// The Hub Staff Intranet
 				var container = document.querySelector("#the-hub-staff-intranet section div");
@@ -174,7 +183,7 @@
 				var container = document.querySelector("#epicure-slider section");
 				container.innerHTML = '<div class="straight"><img src="/img/projects/epicureslider-1.png" alt="A short story outlines the history of epicure and some of epicures products are showcased on the right."></div><div class="straight"><img src="/img/projects/epicureslider-2.png" alt="A page explaining that epicure uses the best ingredients in the world."></div>';
 
-				sectionThreeLoaded = true;
+				sectionFourLoaded = true;
 
 			}
 
