@@ -830,7 +830,7 @@ Media Queries
 
 	/* All */
 	html {
-		font-size: 10px;
+		font-size: 9px;
 	}
 
 	/* Header */
@@ -961,14 +961,9 @@ Media Queries
 }
 
 /* At these sizes we *zoom* the layout */
-@media screen and (max-width: 320px) {
-	html { font-size: 9px; }
-	/* Fix bullet points */
-	.article ul li {
-		background-position: 0 1.15rem;
-	}
+@media screen and (max-width: 319px) {
+	html { font-size: 8px; }
 }
-@media screen and (max-width: 288px) { html { font-size: 8px; } }
 
 
 /* =============================================================================
