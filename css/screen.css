@@ -455,6 +455,7 @@ h1, h2, h3 {
 .no-touch .about .block:hover {
 	background-color: #006bfd;
 	border-radius: 1rem;
+  transition: background-color 0.25s ease;
 }
 .about .block section {
 	display: block;
