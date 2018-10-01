@@ -55,9 +55,9 @@ Typography
 
 h1, h2, h3, p, blockquote { margin: 0; padding: 0; }
 p {
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 abbr[title] { border-bottom: 1px dotted #222222; }
 b, strong { font-weight: bold; }
@@ -91,402 +91,402 @@ Primary Styles
 
 /* Site Wide */
 html {
-	font-size: 10px;
-	line-height: 10px;
-	overflow-y: scroll;
+  font-size: 10px;
+  line-height: 10px;
+  overflow-y: scroll;
 }
 body {
-	font-family: helvetica, arial, sans-serif;
-	font-size: 2rem;
-	font-weight: 300;
-	line-height: 3rem;
-	color: #222222;
-	background: url('/img/bg.jpg') repeat top left;
-	background-size: 164px 130px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  color: #222222;
+  background: url('/img/bg.jpg') repeat top left;
+  background-size: 164px 130px;
 }
 .wf-loading body {
-	visibility: hidden;
+  visibility: hidden;
 }
 .wf-active body {
-	font-family: "ff-meta-web-pro-1", "ff-meta-web-pro-2";
+  font-family: "ff-meta-web-pro-1", "ff-meta-web-pro-2";
 }
 .wf-inactive body {
-	font-family: helvetica, arial, sans-serif;
+  font-family: helvetica, arial, sans-serif;
 }
 h1, h2, h3 {
-	font-size: 2rem;
-	line-height: 3rem;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 #header {
-	margin-bottom: 4rem;
-	border-bottom: 1px solid #dddddd;
-	background-color: #ffffff;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #dddddd;
+  background-color: #ffffff;
 }
 #header section {
-	width: 120rem;
-	margin: 2.5rem auto 0 auto;
-	padding: 0 6rem;
+  width: 120rem;
+  margin: 2.5rem auto 0 auto;
+  padding: 0 6rem;
 }
 #header img {
-	float: left;
-	width: 20rem;
-	margin-top: 6px;
+  float: left;
+  width: 20rem;
+  margin-top: 6px;
 }
 #header section nav {
-	float: right;
+  float: right;
 }
 #header section nav ul li {
-	float: left;
-	margin: 0 12rem -6px 0;
-	height: 6.25rem;
+  float: left;
+  margin: 0 12rem -6px 0;
+  height: 6.25rem;
 }
 #header section nav ul li.active {
-	background: url('/img/arrow.png') no-repeat bottom center;
-	background-size: 12px 6px;
-	font-weight: bold;
+  background: url('/img/arrow.png') no-repeat bottom center;
+  background-size: 12px 6px;
+  font-weight: bold;
 }
 #header section nav ul li a, #header section nav ul li a:visited {
-	color: #999999;
-	font-weight: bold;
+  color: #999999;
+  font-weight: bold;
 }
 #main {
-	width: 120rem;
-	margin: 0 auto;
-	padding: 0 6rem;
+  width: 120rem;
+  margin: 0 auto;
+  padding: 0 6rem;
 }
 
 /* Section: Projects */
 .projects article {
-	margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 .projects article:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .projects header {
-	float: left;
-	width: 36rem;
-	margin-right: 6rem;
+  float: left;
+  width: 36rem;
+  margin-right: 6rem;
 }
 .projects .date {
-	font-size: 1.6rem;
-	line-height: 2.4rem;
-	color: #999999;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #999999;
 }
 .projects h2 {
-	font-size: 3rem;
-	font-weight: bold;
-	line-height: 4rem;
-	margin-bottom: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 4rem;
+  margin-bottom: 2.5rem;
 }
 .projects p {
-	margin-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
 }
 .projects .button {
-	display: inline-block;
-	padding: 1rem 3rem;
-	color: #ffffff;
-	background-color: #006bfd;
-	border-radius: 3rem;
-	font-weight: bold;
+  display: inline-block;
+  padding: 1rem 3rem;
+  color: #ffffff;
+  background-color: #006bfd;
+  border-radius: 3rem;
+  font-weight: bold;
 }
 .projects section {
-	float: left;
-	width: 78rem;
-	margin-bottom: 4rem;
+  float: left;
+  width: 78rem;
+  margin-bottom: 4rem;
 }
 .projects img {
-	width: 100%;
+  width: 100%;
 }
 .projects .framed {
-	box-sizing: border-box;
-	padding: 4rem;
-	border-radius: 20px;
-	border: 1px solid #dddddd;
-	background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 4rem;
+  border-radius: 20px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
 }
 .projects .straight {
-	box-shadow: none;
-	border-radius: 0;
-	border: none;
-	padding: 0;
-	background: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  background: none;
 }
 .projects .framed,
 .projects .straight {
-	margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 .projects .framed:last-child,
 .projects .straight:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .projects .no-top-padding {
-	padding-top: 0;
+  padding-top: 0;
 }
 
 /* Section: Library */
 .library h2 {
-	font-size: 3rem;
-	line-height: 4rem;
-	font-weight: bold;
-	margin-bottom: 2.5rem;
-	clear: both;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  clear: both;
 }
 .library h3, .library p {
-	font-size: 1.6rem;
-	line-height: 2.2rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
 }
 .library h3 {
-	font-weight: bold;
+  font-weight: bold;
 }
 .wf-inactive .library h3.tighten {
-	letter-spacing: -1px;
+  letter-spacing: -1px;
 }
 .library ul li {
-	float: left;
-	width: 19.2rem;
-	margin: 0 6rem 4rem 0;
+  float: left;
+  width: 19.2rem;
+  margin: 0 6rem 4rem 0;
 }
 .library ul li:nth-child(5n) {
-	margin-right: 0;
+  margin-right: 0;
 }
 .library section {
-	position: relative;
+  position: relative;
 }
 .library ul li section img {
-	box-shadow: 0px 0px 3px #aaaaaa;
+  box-shadow: 0px 0px 3px #aaaaaa;
 }
 .library ul li section:nth-child(1) {
-	height: 23rem;
+  height: 23rem;
 }
 .library ul li section:nth-child(1) img {
-	width: 80%;
-	position: absolute;
-	bottom: 1rem;
+  width: 80%;
+  position: absolute;
+  bottom: 1rem;
 }
 .library ul li section:nth-child(1) img.shorten {
-	width: 74%;
+  width: 74%;
 }
 .library ul li section:nth-child(1) img.extra-shorten {
-	width: 65%;
+  width: 65%;
 }
 .library ul li section:nth-child(1) img.fatten {
-	width: 90%;
+  width: 90%;
 }
 .library ul li section:nth-child(1) img.extra-fatten {
-	width: 99%;
+  width: 99%;
 }
 .library ul li section:nth-child(2) {
-	height: 13rem;
-	overflow: hidden;
+  height: 13rem;
+  overflow: hidden;
 }
 .library blockquote {
-	margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 .library blockquote p {
-	font-size: 3rem;
-	line-height: 4rem;
+  font-size: 3rem;
+  line-height: 4rem;
 }
 .library blockquote p.quote {
-	text-align: left;
+  text-align: left;
 }
 .library blockquote p.quote .qm {
-	margin-left: -1.4rem;
+  margin-left: -1.4rem;
 }
 .library blockquote p em.author {
-	color: #999999;
+  color: #999999;
 }
 
 /* Section: Notes */
 #notes {
-	float: left;
-	width: 94.8rem;
-	margin-right: 6rem;
+  float: left;
+  width: 94.8rem;
+  margin-right: 6rem;
 }
 #notes .meta aside {
-	font-size: 1.6rem;
-	line-height: 2.4rem;
-	color: #999999;
-	margin-top: 0.4rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #999999;
+  margin-top: 0.4rem;
 }
 #notes h2 {
-	font-size: 6rem;
-	line-height: 7rem;
-	margin-bottom: 3rem;
-	font-weight: bold;
+  font-size: 6rem;
+  line-height: 7rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
 }
 .article .date, .article aside {
-	font-size: 1.6rem;
-	line-height: 2.4rem;
-	color: #999999;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #999999;
 }
 .article .date {
-	width: 19.2rem;
+  width: 19.2rem;
 }
 .article .date {
-	float: left;
-	text-align: right;
+  float: left;
+  text-align: right;
 }
 .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
-	width: 69.6rem;
-	padding-left: 25.2rem;
+  width: 69.6rem;
+  padding-left: 25.2rem;
 }
 .article h1, .article h2  {
-	margin: 0 0 3rem 0;
+  margin: 0 0 3rem 0;
 }
 .article h1 {
-	font-weight: bold;
+  font-weight: bold;
 }
 .article h2  {
-	margin-top: 3rem;
-	font-weight: 300;
-	font-style: italic;
+  margin-top: 3rem;
+  font-weight: 300;
+  font-style: italic;
 }
 .article blockquote {
-	margin: 3rem 0;
+  margin: 3rem 0;
 }
 .article blockquote p {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .article blockquote em {
-	font-style: italic;
-	color: #999999;
+  font-style: italic;
+  color: #999999;
 }
 .article p {
-	text-indent: 0;
+  text-indent: 0;
 }
 .article p:last-child {
-	margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 .article p + p, .article p + aside + p {
-	text-indent: 4rem;
+  text-indent: 4rem;
 }
 .article ul, .article ol, .article pre {
-	margin: 3rem 0;
+  margin: 3rem 0;
 }
 .article ul li {
-	background: transparent url(/img/bullet.png) no-repeat 0 1.35rem;
-	background-size: 6px 6px;
-	padding-left: 2rem;
-	margin-left: -2rem;
+  background: transparent url(/img/bullet.png) no-repeat 0 1.35rem;
+  background-size: 6px 6px;
+  padding-left: 2rem;
+  margin-left: -2rem;
 }
 .article ol li {
-	list-style-type: decimal;
+  list-style-type: decimal;
 }
 .article aside {
-	width: 19.2rem;
-	margin-top: 0.4rem;
+  width: 19.2rem;
+  margin-top: 0.4rem;
 }
 .article .left {
-	float: left;
-	text-align: right;
+  float: left;
+  text-align: right;
 }
 .article .right {
-	float: right;
+  float: right;
 }
 .article figure {
-	margin: 3rem 0;
+  margin: 3rem 0;
 }
 .article figcaption {
-	font-size: 1.6rem;
-	line-height: 2.4rem;
-	font-style: italic;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-style: italic;
 }
 .article pre {
-	background-color: #000000;
-	padding: 3rem;
-	border-radius: 0.5rem;
-	margin-left: 0;
-	margin-right: 0;
+  background-color: #000000;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 .article pre, .article code {
-	font-family: Menlo, Monaco, monospace;
-	font-size: 2rem;
-	line-height: 3rem;
-	color: #ffffff;
+  font-family: Menlo, Monaco, monospace;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #ffffff;
 }
 .article .footnotes {
-	border-top: 1px solid #666666;
-	padding-top: 3rem;
-	padding-left: 0;
-	margin-left: 25.2rem;
+  border-top: 1px solid #666666;
+  padding-top: 3rem;
+  padding-left: 0;
+  margin-left: 25.2rem;
 }
 .article .footnotes li {
-	font-size: 1.6rem;
-	line-height: 2.4rem;
-	font-style: italic;
-	margin-bottom: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-style: italic;
+  margin-bottom: 2.4rem;
 }
 
 /* Section: About */
 .about .photo {
-	float: left;
-	width: 36rem;
-	margin-right: 6rem;
+  float: left;
+  width: 36rem;
+  margin-right: 6rem;
 }
 .about h1 {
-	font-weight: bold;
-	font-size: 3rem;
-	line-height: 4rem;
-	margin-bottom: 2.5rem;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 2.5rem;
 }
 .about .bio {
-	float: left;
-	width: 36rem;
-	margin-right: 5rem;
-	margin-top: 1rem;
+  float: left;
+  width: 36rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
 }
 .about .bio p {
-	margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 .about .bio .email img {
-	width: 4rem;
-	height: 2.6rem;
-	margin-right: 2rem;
-	vertical-align: middle;
+  width: 4rem;
+  height: 2.6rem;
+  margin-right: 2rem;
+  vertical-align: middle;
 }
 .about .block {
-	display: block;
-	float: left;
-	width: 35rem;
-	padding: 1rem;
-	margin-bottom: 1rem;
+  display: block;
+  float: left;
+  width: 35rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 .no-touch .about .block:hover {
-	background-color: #006bfd;
-	border-radius: 1rem;
+  background-color: #006bfd;
+  border-radius: 1rem;
   transition: background-color 0.25s ease;
 }
 .about .block section {
-	display: block;
-	float: left;
-	color: #222222;
+  display: block;
+  float: left;
+  color: #222222;
 }
 .no-touch .about .block:hover section {
-	color: #ffffff;
+  color: #ffffff;
 }
 .about .dribbble img {
-	width: 5.8rem;
-	height: 5.8rem;
-	margin: 0.1rem 1.8rem 0 0.5rem;
+  width: 5.8rem;
+  height: 5.8rem;
+  margin: 0.1rem 1.8rem 0 0.5rem;
 }
 .about .github img {
-	width: 6.5rem;
-	height: 5.8rem;
-	margin: 0.2rem 1.5rem 0 0.1rem;
+  width: 6.5rem;
+  height: 5.8rem;
+  margin: 0.2rem 1.5rem 0 0.1rem;
 }
 .about .twitter img {
-	width: 5.8rem;
-	height: 4.8rem;
-	margin: 0.5rem 1.8rem 0 0.5rem;
+  width: 5.8rem;
+  height: 4.8rem;
+  margin: 0.5rem 1.8rem 0 0.5rem;
 }
 .about .flickr img {
-	width: 5.4rem;
-	height: 5.4rem;
-	margin: 0.4rem 2.1rem 0 0.6rem;
+  width: 5.4rem;
+  height: 5.4rem;
+  margin: 0.4rem 2.1rem 0 0.6rem;
 }
 .about .block h2 {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 
@@ -497,473 +497,473 @@ Media Queries
 /* At these sizes we *zoom* the layout */
 @media screen and (max-width: 1320px) { html { font-size: 9px; } }
 @media screen and (max-width: 1188px) {
-	html { font-size: 8px; }
-	/* Fix bullet points */
-	.article ul li {
-		background-position: 0 1.15rem;
-	}
+  html { font-size: 8px; }
+  /* Fix bullet points */
+  .article ul li {
+    background-position: 0 1.15rem;
+  }
 }
 
 /* Size: Tablets */
 @media screen and (max-width: 1056px) {
 
-	/* All */
-	html {
-		font-size: 10px;
-	}
+  /* All */
+  html {
+    font-size: 10px;
+  }
 
-	/* Header */
-	#header section, #main {
-		width: 69.6rem;
-		padding-left: 3rem;
-		padding-right: 3rem;
-	}
-	#header section nav ul li {
-		margin-right: 3.5rem;
-	}
+  /* Header */
+  #header section, #main {
+    width: 69.6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  #header section nav ul li {
+    margin-right: 3.5rem;
+  }
 
-	/* Section: Projects */
-	.projects header {
-		float: none;
-		margin-right: none;
-		width: 69.6rem;
-	}
-	.projects aside, .projects h2, .projects p {
-		float: left;
-		width: 36rem;
-	}
-	.projects p {
-		margin-bottom: 3.5rem;
-	}
-	.projects .button {
-		float: right;
-		margin: -1rem 0 0 0;
-	}
-	.projects section {
-		width: 69.6rem;
-	}
-	.projects .framed {
-		padding: 3.5rem;
-		border-radius: 12px;
-	}
-	.projects .no-top-padding {
-		padding-top: 0;
-	}
+  /* Section: Projects */
+  .projects header {
+    float: none;
+    margin-right: none;
+    width: 69.6rem;
+  }
+  .projects aside, .projects h2, .projects p {
+    float: left;
+    width: 36rem;
+  }
+  .projects p {
+    margin-bottom: 3.5rem;
+  }
+  .projects .button {
+    float: right;
+    margin: -1rem 0 0 0;
+  }
+  .projects section {
+    width: 69.6rem;
+  }
+  .projects .framed {
+    padding: 3.5rem;
+    border-radius: 12px;
+  }
+  .projects .no-top-padding {
+    padding-top: 0;
+  }
 
-	/* Section: Library */
-	.library ul li:nth-child(5n) {
-		margin-right: 6rem;
-	}
-	.library ul li:nth-child(3n) {
-		margin-right: 0;
-	}
-	.library .ideas li section:nth-child(2),
-	.library .ideas li section:nth-child(3) {
-		width: 69.6rem;
-		margin-right: 0;
-	}
-	.library blockquote {
-		width: 100%;
-	}
+  /* Section: Library */
+  .library ul li:nth-child(5n) {
+    margin-right: 6rem;
+  }
+  .library ul li:nth-child(3n) {
+    margin-right: 0;
+  }
+  .library .ideas li section:nth-child(2),
+  .library .ideas li section:nth-child(3) {
+    width: 69.6rem;
+    margin-right: 0;
+  }
+  .library blockquote {
+    width: 100%;
+  }
 
-	/* Section: Notes */
-	#notes {
-		width: 69.6rem;
-		margin-right: 0;
-		margin-left: 0;
-	}
-	#notes .meta aside {
-		margin-top: 0;
-	}
-	.article .date {
-		width: auto;
-		text-align: left;
-		margin: 0;
-	}
-	.article .date {
-		float: left;
-	}
-	.article h1 {
-		clear: both;
-	}
-	.article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
-		padding-left: 0;
-	}
-	.article .footnotes {
-		margin-left: 0;
-	}
-	.article .left, .article .right {
-		float: none;
-		text-align: left;
-		width: auto;
-		margin: 3rem 0;
-		padding: 1rem 0;
-		border-top: 1px solid #efefef;
-		border-bottom: 1px solid #efefef;
-	}
-	.article figure {
-		margin: 3rem 0;
-	}
-	.article figcaption {
-		font-size: 1.6rem;
-		line-height: 2.4rem;
-	}
-	.article ul li {
-		background-position: 0 1.35rem;
-	}
+  /* Section: Notes */
+  #notes {
+    width: 69.6rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #notes .meta aside {
+    margin-top: 0;
+  }
+  .article .date {
+    width: auto;
+    text-align: left;
+    margin: 0;
+  }
+  .article .date {
+    float: left;
+  }
+  .article h1 {
+    clear: both;
+  }
+  .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
+    padding-left: 0;
+  }
+  .article .footnotes {
+    margin-left: 0;
+  }
+  .article .left, .article .right {
+    float: none;
+    text-align: left;
+    width: auto;
+    margin: 3rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+  }
+  .article figure {
+    margin: 3rem 0;
+  }
+  .article figcaption {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .article ul li {
+    background-position: 0 1.35rem;
+  }
 
-	/* Section: About */
-	.about .photo {
-		width: 25rem;
-		margin: 0 3rem 3rem 0;
-	}
-	.about h1 {
-		padding: 9rem 0 0 0;
-		margin: 0;
-		font-size: 3rem;
-	}
-	.about .bio {
-		clear: both;
-		margin-right: 2rem;
-		margin-top: 0;
-	}
-	.about .bio p {
-		margin-bottom: 3rem;
-	}
-	.about .bio .email img {
-		width: 3.9rem;
-		height: 2.8rem;
-		margin-right: 2rem;
-	}
-	.about .block {
-		width: 29.6rem;
-	}
-	.about .twitter {
-		margin-top: -1rem;
-	}
-	.about .block p {
-		font-size: 1.6rem;
-	}
+  /* Section: About */
+  .about .photo {
+    width: 25rem;
+    margin: 0 3rem 3rem 0;
+  }
+  .about h1 {
+    padding: 9rem 0 0 0;
+    margin: 0;
+    font-size: 3rem;
+  }
+  .about .bio {
+    clear: both;
+    margin-right: 2rem;
+    margin-top: 0;
+  }
+  .about .bio p {
+    margin-bottom: 3rem;
+  }
+  .about .bio .email img {
+    width: 3.9rem;
+    height: 2.8rem;
+    margin-right: 2rem;
+  }
+  .about .block {
+    width: 29.6rem;
+  }
+  .about .twitter {
+    margin-top: -1rem;
+  }
+  .about .block p {
+    font-size: 1.6rem;
+  }
 }
 
 /* At these sizes we *zoom* the layout */
 @media screen and (max-width: 756px) { html { font-size: 9px; } }
 @media screen and (max-width: 680px) {
-	html { font-size: 8px; }
-	/* Fix bullet points */
-	.article ul li {
-		background-position: 0 1.15rem;
-	}
+  html { font-size: 8px; }
+  /* Fix bullet points */
+  .article ul li {
+    background-position: 0 1.15rem;
+  }
 }
 
 /* Size: Mobile Landscape */
 @media screen and (max-width: 604px) {
 
-	/* All */
-	html {
-		font-size: 10px;
-	}
+  /* All */
+  html {
+    font-size: 10px;
+  }
 
-	/* Header */
-	#header {
-		min-width: 48rem;
-	}
-	#header section {
-		margin-top: 3rem;
-	}
-	#header section, #main {
-		width: 43rem;
-		padding-left: 2.5rem;
-		padding-right: 2.5rem;
-	}
-	#header img {
-		display: block;
-		float: none;
-		width: 26rem;
-		margin: 0 auto 2rem auto;
-	}
-	#header section nav {
-		float: none;
-		width: 33.2rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	#header section nav ul li {
-		float: left;
-		margin-right: 2.75rem;
-	}
-	#header section nav ul li:last-child {
-		margin-right: 0;
-	}
+  /* Header */
+  #header {
+    min-width: 48rem;
+  }
+  #header section {
+    margin-top: 3rem;
+  }
+  #header section, #main {
+    width: 43rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  #header img {
+    display: block;
+    float: none;
+    width: 26rem;
+    margin: 0 auto 2rem auto;
+  }
+  #header section nav {
+    float: none;
+    width: 33.2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #header section nav ul li {
+    float: left;
+    margin-right: 2.75rem;
+  }
+  #header section nav ul li:last-child {
+    margin-right: 0;
+  }
 
-	/* Section: Projects */
-	.projects header {
-		width: 43rem;
-	}
-	.projects aside, .projects h2, .projects p {
-		float: none;
-	}
-	.projects h2 {
-		line-height: 3.5rem;
-	}
-	.projects .nodemo p {
-		margin-bottom: 0;
-	}
-	.projects .button {
-		float: none;
-		margin: 0;
-	}
-	.projects article {
-		margin-bottom: 1rem;
-	}
-	.projects section {
-		width: 43rem;
-	}
-	.projects .nodemo section {
-		margin-top: 3rem;
-	}
-	.projects .framed {
-		padding: 1.75rem;
-		border-radius: 10px;
-	}
-	.projects .no-top-padding {
-		padding-top: 0;
-	}
-	.projects .framed, .projects .straight {
-		margin-bottom: 3rem;
-	}
+  /* Section: Projects */
+  .projects header {
+    width: 43rem;
+  }
+  .projects aside, .projects h2, .projects p {
+    float: none;
+  }
+  .projects h2 {
+    line-height: 3.5rem;
+  }
+  .projects .nodemo p {
+    margin-bottom: 0;
+  }
+  .projects .button {
+    float: none;
+    margin: 0;
+  }
+  .projects article {
+    margin-bottom: 1rem;
+  }
+  .projects section {
+    width: 43rem;
+  }
+  .projects .nodemo section {
+    margin-top: 3rem;
+  }
+  .projects .framed {
+    padding: 1.75rem;
+    border-radius: 10px;
+  }
+  .projects .no-top-padding {
+    padding-top: 0;
+  }
+  .projects .framed, .projects .straight {
+    margin-bottom: 3rem;
+  }
 
-	/* Section: Library */
-	.library ul li {
-		margin-bottom: 4.6rem;
-	}
-	.library ul li:nth-child(1n) {
-		margin-right: 4.6rem;
-	}
-	.library ul li:nth-child(2n) {
-		margin-right: 0;
-	}
-	.library .ideas li section:nth-child(1) {
-		margin-right: 0;
-	}
-	.library .ideas li section:nth-child(2),
-	.library .ideas li section:nth-child(3) {
-		width: 43rem;
-	}
+  /* Section: Library */
+  .library ul li {
+    margin-bottom: 4.6rem;
+  }
+  .library ul li:nth-child(1n) {
+    margin-right: 4.6rem;
+  }
+  .library ul li:nth-child(2n) {
+    margin-right: 0;
+  }
+  .library .ideas li section:nth-child(1) {
+    margin-right: 0;
+  }
+  .library .ideas li section:nth-child(2),
+  .library .ideas li section:nth-child(3) {
+    width: 43rem;
+  }
 
-	/* Section: Notes */
-	#notes {
-		width: 43rem;
-	}
-	#notes h2 {
-		font-size: 5rem;
-		line-height: 5rem;
-		margin-bottom: 2.5rem;
-	}
-	#notes p {
-		text-align: left;
-	}
-	.article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
-		width: 43rem;
-	}
-	.article p {
-		text-align: left;
-	}
-	.article ul li {
-		background-position: 0 1.35rem;
-	}
+  /* Section: Notes */
+  #notes {
+    width: 43rem;
+  }
+  #notes h2 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 2.5rem;
+  }
+  #notes p {
+    text-align: left;
+  }
+  .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
+    width: 43rem;
+  }
+  .article p {
+    text-align: left;
+  }
+  .article ul li {
+    background-position: 0 1.35rem;
+  }
 
-	/* Section: About */
-	.about .photo {
-		width: 30rem;
-		margin: 0 0 0 7rem;
-	}
-	.about h1 {
-		clear: both;
-		text-align: center;
-		width: 43rem;
-		padding: 3rem 0;
-		line-height: 4rem;
-	}
-	.about .bio, .about p {
-		text-align: center;
-		width: 43rem;
-		margin-right: 0;
-	}
-	.about .bio .email {
-		margin-bottom: 4.5rem;
-	}
-	.about .block {
-		width: 43rem;
-		padding-left: 0;
-		padding-right: 0;
-	}
-	.about .icon {
-		width: 43rem;
-		height: auto;
-		text-align: center;
-	}
-	.about .icon img {
-		margin: 0 auto 1rem auto;
-	}
-	.about .block section h2, .about .block section p {
-		clear: both;
-		text-align: center;
-	}
-	.about .block section h2 {
-		line-height: 2rem;
-		margin-top: 0.3rem;
-	}
+  /* Section: About */
+  .about .photo {
+    width: 30rem;
+    margin: 0 0 0 7rem;
+  }
+  .about h1 {
+    clear: both;
+    text-align: center;
+    width: 43rem;
+    padding: 3rem 0;
+    line-height: 4rem;
+  }
+  .about .bio, .about p {
+    text-align: center;
+    width: 43rem;
+    margin-right: 0;
+  }
+  .about .bio .email {
+    margin-bottom: 4.5rem;
+  }
+  .about .block {
+    width: 43rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about .icon {
+    width: 43rem;
+    height: auto;
+    text-align: center;
+  }
+  .about .icon img {
+    margin: 0 auto 1rem auto;
+  }
+  .about .block section h2, .about .block section p {
+    clear: both;
+    text-align: center;
+  }
+  .about .block section h2 {
+    line-height: 2rem;
+    margin-top: 0.3rem;
+  }
 }
 
 /* At these sizes we *zoom* the layout */
 @media screen and (max-width: 480px) { html { font-size: 9px; } }
 @media screen and (max-width: 431px) {
-	html { font-size: 8px; }
-	/* Fix bullet points */
-	.article ul li {
-		background-position: 0 1.15rem;
-	}
+  html { font-size: 8px; }
+  /* Fix bullet points */
+  .article ul li {
+    background-position: 0 1.15rem;
+  }
 }
 
 /* Size: Mobile Portrait */
 @media screen and (max-width: 387px) {
 
-	/* All */
-	html {
-		font-size: 9px;
-	}
+  /* All */
+  html {
+    font-size: 9px;
+  }
 
-	/* Header */
-	#header {
-		min-width: 32rem;
-	}
-	#header section, #main {
-		width: 32rem;
-		padding-left: 0;
-		padding-right: 0;
-	}
-	#header section {
-		margin-top: 3rem;
-	}
-	#header section img {
-		width: 31.8rem;
-		margin: 0 0 2.5rem 0;
-	}
-	#header section nav {
-		width: 32rem;
-	}
-	#header section nav ul li {
-		margin-right: 2.475rem;
-	}
+  /* Header */
+  #header {
+    min-width: 32rem;
+  }
+  #header section, #main {
+    width: 32rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #header section {
+    margin-top: 3rem;
+  }
+  #header section img {
+    width: 31.8rem;
+    margin: 0 0 2.5rem 0;
+  }
+  #header section nav {
+    width: 32rem;
+  }
+  #header section nav ul li {
+    margin-right: 2.475rem;
+  }
 
-	/* Section: Projects */
-	.projects header {
-		width: 32rem;
-	}
-	.projects aside, .projects h2, .projects p {
-		float: none;
-		width: 32rem;
-	}
-	.projects .nodemo p {
-		margin-bottom: 0;
-	}
-	.projects .button {
-		float: none;
-		margin: 0;
-	}
-	.projects section {
-		width: 32rem;
-	}
+  /* Section: Projects */
+  .projects header {
+    width: 32rem;
+  }
+  .projects aside, .projects h2, .projects p {
+    float: none;
+    width: 32rem;
+  }
+  .projects .nodemo p {
+    margin-bottom: 0;
+  }
+  .projects .button {
+    float: none;
+    margin: 0;
+  }
+  .projects section {
+    width: 32rem;
+  }
 
-	/* Section: Library */
-	.library h2 {
-		margin-bottom: 2rem;
-	}
-	.library ul li:nth-child(1n) {
-		width: 32rem;
-		margin-bottom: 3rem;
-		margin-right: 0;
-	}
-	.library ul li section:nth-child(1) {
-		height: auto;
-	}
-	.library ul li section:nth-child(2) {
-		height: auto;
-	}
-	.library ul li section:nth-child(1) img {
-		position: static;
-		margin-bottom: 1rem;
-	}
-	.library .ideas li section:nth-child(2),
-	.library .ideas li section:nth-child(3) {
-		width: 32rem;
-	}
+  /* Section: Library */
+  .library h2 {
+    margin-bottom: 2rem;
+  }
+  .library ul li:nth-child(1n) {
+    width: 32rem;
+    margin-bottom: 3rem;
+    margin-right: 0;
+  }
+  .library ul li section:nth-child(1) {
+    height: auto;
+  }
+  .library ul li section:nth-child(2) {
+    height: auto;
+  }
+  .library ul li section:nth-child(1) img {
+    position: static;
+    margin-bottom: 1rem;
+  }
+  .library .ideas li section:nth-child(2),
+  .library .ideas li section:nth-child(3) {
+    width: 32rem;
+  }
 
-	/* Section: Notes */
-	#notes {
-		width: 32rem;
-	}
-	#notes h2 {
-		font-size: 4rem;
-		line-height: 4rem;
-		margin-bottom: 3rem;
-	}
-	.article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
-		width: 32rem;
-	}
-	.article ul, .article ol {
-		width: 30rem;
-	}
-	.article .date {
-		float: none;
-	}
-	.article p + p, .article p + aside + p {
-		text-indent: 2rem;
-	}
-	.article ul, .article ol {
-		margin-left: 2rem;
-		margin-right: 0;
-	}
-	.article ol.footnotes {
-		padding-left: 2rem;
-	}
-	.article ul li {
-		background-position: 0 1.35rem;
-	}
+  /* Section: Notes */
+  #notes {
+    width: 32rem;
+  }
+  #notes h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+  }
+  .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
+    width: 32rem;
+  }
+  .article ul, .article ol {
+    width: 30rem;
+  }
+  .article .date {
+    float: none;
+  }
+  .article p + p, .article p + aside + p {
+    text-indent: 2rem;
+  }
+  .article ul, .article ol {
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+  .article ol.footnotes {
+    padding-left: 2rem;
+  }
+  .article ul li {
+    background-position: 0 1.35rem;
+  }
 
-	/* Section: About */
-	.about .photo {
-		width: 32rem;
-		margin: 0;
-	}
-	.about h1 {
-		width: 32rem;
-	}
-	.about .bio, .about p {
-		width: 32rem;
-	}
-	.about .bio .email {
-		margin-bottom: 3rem;
-	}
-	.about .bio .email img {
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-		margin-bottom: 1rem;
-	}
-	.about .block {
-		width: 32rem;
-	}
-	.about .icon {
-		width: 32rem;
-	}
+  /* Section: About */
+  .about .photo {
+    width: 32rem;
+    margin: 0;
+  }
+  .about h1 {
+    width: 32rem;
+  }
+  .about .bio, .about p {
+    width: 32rem;
+  }
+  .about .bio .email {
+    margin-bottom: 3rem;
+  }
+  .about .bio .email img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+  }
+  .about .block {
+    width: 32rem;
+  }
+  .about .icon {
+    width: 32rem;
+  }
 
 }
 
 /* At these sizes we *zoom* the layout */
 @media screen and (max-width: 319px) {
-	html { font-size: 8px; }
+  html { font-size: 8px; }
 }
 
 
@@ -998,16 +998,16 @@ Print Styles
 ========================================================================== */
 
 @media print {
-	* { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-	a, a:visited { text-decoration: underline; }
-	a[href]:after { content: " (" attr(href) ")"; }
-	abbr[title]:after { content: " (" attr(title) ")"; }
-	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-	pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-	thead { display: table-header-group; } /* h5bp.com/t */
-	tr, img { page-break-inside: avoid; }
-	img { max-width: 100% !important; }
-	@page { margin: 0.5cm; }
-	p, h2, h3 { orphans: 3; widows: 3; }
-	h2, h3 { page-break-after: avoid; }
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
 }
