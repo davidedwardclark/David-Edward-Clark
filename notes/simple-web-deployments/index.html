@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Simple Web Deployments</title>
+  <meta name="description" content="Makes the case that web deployments should be kept as simple as possible.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/screen.css">
+  <script src="//use.typekit.net/csv7roj.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+  <header id="header" class="clearfix">
+    <section>
+      <a href="/"><img src="/img/logo.png" alt="David Edward Clark"></a>
+      <nav>
+        <ul>
+          <li><a href="/">projects</a></li>
+          <li><a href="/library/">library</a></li>
+          <li class="active"><a href="/notes/">notes</a></li>
+          <li><a href="/about/">about</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <section id="main" class="article hyphenate">
+    <aside class="date">December 11, 2018</aside>
+    <h1>Simple Web Deployments</h1>
+    <p>There are too many moving parts in modern web applications. Building and deploying sites is one of the areas that has become overly complex. In this post I will explain how I keep my web deployments simple and straightforward, while maintaining the benefits that come from optimisations like minification and image compression.</p>
+    <p>Many modern web development configurations involve using build tools like Grunt, or Gulp. These tools allow one to automate builds performing common tasks such as image compression, cache busting, and minification. After a series of tasks on the code these scripts produce a folder with files ready to be deployed or they deploy the files to a server themselves. Without question lossless compression of images, cache busting, and minifying files is good and something that should be done in <strong>most</strong> cases. All that being said I choose not to do these things with a build tool. I prepare my files manually and deploy by hand using <a href="https://panic.com/transmit/">Panic's Transmit</a>. I do this because I like to <strong>keep things simple</strong>. <a href="http://wiki.c2.com/?PrematureOptimization">Premature optimisation is the root of all evil</a>. Keeping things simple means I have less things to worry about when I deploy. I know I may have to do a few more steps manually but I also know I won't have to dig through a script if I want to make changes, and I don't have to worry about my build tool breaking due to an out of date dependancy.</p>
+    <p>I start by making a new folder for my project: ~/Projects/Project-Name/. Next I initiate a git repo and push it up to Github. Now I have a place to work and backup my files as I go.</p>
+    <p>When I am ready to deploy my work to production I setup an Amazon S3 Bucket which is in turn wired up to CloudFront, and Route53.</p>
+    <p>If images need to be compressed I do so by hand in Photoshop. This allows for the best compression to quality ratio. If HTML, CSS, or JavaScript files need minifying then I do so with a command line tool or website that offers this service. When my files are ready for deployment I copy them into their S3 Bucket by using Panic's beautifully designed app Transmit.</p>
+    <p>Once the files are up on the server a cache bust is required with Amazon CloudFront. When this is complete the deploy is done and the new site can be accessed by anyone with a browser and internet connection.</p>
+    <figure class="large">
+        <img src="deployment-flow.jpg" alt="Deployment flow from local to production.">
+        <figcaption>fig. 1 Deployment Flow</figcaption>
+    </figure>
+    <p>Could many of these steps be performed by a build tool like Gulp, or Grunt? Absolutely. But by keeping my deploys simple I remove the need to maintain Just One More Complex Process™ which makes life easier. My setup is ideal for small projects. If you have a web application with thousands of images or files that need optimisation and minification then I can understand the need for a build script. Essentially I am arguing against premature optimisation in the area of web deployments. Don't use a build script unless you need one!</p>
+  </section>
+</body>
+</html>
