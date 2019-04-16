@@ -96,22 +96,13 @@ html {
   overflow-y: scroll;
 }
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: "Source Sans Pro", helvetica, arial, sans-serif;
   font-size: 2rem;
   font-weight: 300;
   line-height: 3rem;
   color: #222222;
   background: url('/img/bg.jpg') repeat top left;
   background-size: 164px 130px;
-}
-.wf-loading body {
-  visibility: hidden;
-}
-.wf-active body {
-  font-family: "ff-meta-web-pro-1", "ff-meta-web-pro-2";
-}
-.wf-inactive body {
-  font-family: helvetica, arial, sans-serif;
 }
 h1, h2, h3 {
   font-size: 2rem;
