@@ -132,8 +132,6 @@ h1, h2, h3 {
   height: 6.25rem;
 }
 #header section nav ul li.active {
-  background: url('/img/arrow.png') no-repeat bottom center;
-  background-size: 12px 6px;
   font-weight: bold;
 }
 #header section nav ul li a, #header section nav ul li a:visited {
@@ -187,6 +185,9 @@ h1, h2, h3 {
 }
 .projects img {
   width: 100%;
+}
+.projects section img:nth-child(2) {
+  margin-top: 4rem;
 }
 .projects .framed {
   box-sizing: border-box;
