@@ -109,7 +109,7 @@ h1, h2, h3 {
   line-height: 3rem;
 }
 #header {
-  margin-bottom: 4rem;
+  margin-bottom: 12rem;
   border-bottom: 1px solid #dddddd;
   background-color: #ffffff;
 }
@@ -146,10 +146,10 @@ h1, h2, h3 {
 
 /* Section: Projects */
 .projects article {
-  margin-bottom: 4rem;
+  margin-bottom: 20rem;
 }
 .projects article:last-child {
-  margin-bottom: 0;
+  margin-bottom: 16rem;
 }
 .projects header {
   float: left;
@@ -207,8 +207,7 @@ h1, h2, h3 {
 .projects .straight {
   margin-bottom: 4rem;
 }
-.projects .framed:last-child,
-.projects .straight:last-child {
+.projects .framed:last-child {
   margin-bottom: 0;
 }
 .projects .no-top-padding {
@@ -220,7 +219,8 @@ h1, h2, h3 {
   font-size: 3rem;
   line-height: 4rem;
   font-weight: bold;
-  margin-bottom: 2.5rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
   clear: both;
 }
 .library h3, .library p {
@@ -272,7 +272,7 @@ h1, h2, h3 {
   overflow: hidden;
 }
 .library blockquote {
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 .library blockquote p {
   font-size: 3rem;
@@ -303,8 +303,11 @@ h1, h2, h3 {
 #notes h2 {
   font-size: 6rem;
   line-height: 7rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   font-weight: bold;
+}
+#main.article {
+  margin-bottom: 16rem;
 }
 .article .date, .article aside {
   font-size: 1.6rem;
@@ -414,7 +417,8 @@ h1, h2, h3 {
   font-weight: bold;
   font-size: 3rem;
   line-height: 4rem;
-  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 .about .bio {
   float: left;
@@ -423,7 +427,7 @@ h1, h2, h3 {
   margin-top: 1rem;
 }
 .about .bio p {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .about .bio .email img {
   width: 4rem;
@@ -503,6 +507,7 @@ Media Queries
     width: 69.6rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    margin-bottom: 16rem;
   }
   #header section nav ul li {
     margin-right: 3.5rem;
@@ -699,9 +704,6 @@ Media Queries
     float: none;
     margin: 0;
   }
-  .projects article {
-    margin-bottom: 1rem;
-  }
   .projects section {
     width: 43rem;
   }
@@ -744,7 +746,6 @@ Media Queries
   #notes h2 {
     font-size: 5rem;
     line-height: 5rem;
-    margin-bottom: 2.5rem;
   }
   #notes p {
     text-align: left;
@@ -893,7 +894,6 @@ Media Queries
   #notes h2 {
     font-size: 4rem;
     line-height: 4rem;
-    margin-bottom: 3rem;
   }
   .article h1, .article h2, .article p, .article blockquote, .article ul, .article ol, .article .small, .article .large figcaption, .article .code {
     width: 32rem;
@@ -957,4 +957,3 @@ Non-Semantic Helper Classes
 /* Contain floats: h5bp.com/q */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
