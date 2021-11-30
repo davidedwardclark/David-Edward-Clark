@@ -146,7 +146,7 @@ h1, h2, h3 {
 
 /* Section: Projects */
 .projects article {
-  margin-bottom: 20rem;
+  margin-bottom: 14rem;
 }
 .projects article:last-child {
   margin-bottom: 16rem;
@@ -660,6 +660,7 @@ Media Queries
   /* Header */
   #header {
     min-width: 48rem;
+    margin-bottom: 8rem;
   }
   #header section {
     margin-top: 3rem;
@@ -690,6 +691,9 @@ Media Queries
   }
 
   /* Section: Projects */
+  .projects article {
+    margin-bottom: 10rem;
+  }
   .projects header {
     width: 43rem;
   }
